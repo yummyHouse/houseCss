@@ -1,1000 +1,128 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145087776-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-145087776-1');
-  </script>
-  <script data-ad-client="ca-pub-9683076588734389" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
   <meta charset="UTF-8">
-  <meta http-equiv="Cache-control" content="public">
-  <meta http-equiv="max-age" content="864000" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="author" content="yummy">
-  <meta name="copyright" content="">
-  <meta name="description" content="好事貸樣式表">
-  <meta itemprop="name" content="">
-  <meta itemprop="image" content="img/main.png">
-  <meta itemprop="description" content="好事貸樣式表">
-  <meta property="og:title" content="好事貸樣式表">
-  <meta property="og:url" content="houseloan">
-  <meta property="og:image" content="img/main.png">
-  <meta property="og:description" content="好事貸樣式表">
-  <title>好事貸樣式表</title>
-
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <link rel="shortcut icon" href="img/icon.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/temp.css">
-  <link rel="stylesheet" href="css/loaders.css">
-  <link rel="stylesheet" href="css/homeloan_article.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
-
-
-
-
-
-
-
-  <style type="text/css">
-    .c_center {
-      width: 1000px;
-    }
-
-    .dogs {
-      display: inline-flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-      width: 1000px;
-      margin-top: 160px;
-      margin-bottom: 100px;
-    }
-
-
-    .item {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 50px;
-      width: 1000px;
-      text-align: center;
-      padding: 25px;
-      border: 2px solid #4b5ea3;
-      border-radius: 20px;
-      box-shadow: 10px 10px #93a1d18f;
-
-    }
-
-    .item:hover {
-      background-color: #e8e1da;
-    }
-
-
-
-
-    .item p {
-      font-family: sans-serif;
-      text-align: left;
-
-
-
-    }
-
-
-
-
-
-    .btn {
-      display: block;
-      text-align: center;
-      border: 2px solid #ba9f76;
-      color: #ba9f76;
-      line-height: 24px;
-    }
-
-
-    .readmore1,
-    .readmore2,
-    .readmore3,
-    .readmore4 {
-      border-radius: 25px 25px 0px 0px;
-      background-color: #4b5ea3;
-      line-height: 20PX;
-      width: 20%;
-      margin-top: 20px;
-      text-align: center;
-      color: #fff;
-      font-weight: 600;
-      padding: 10px 0px;
-      margin-right: 5px;
-    }
-
-    .readmore1:hover,
-    .readmore2:hover,
-    .readmore3:hover,
-    .readmore4:hover {
-      cursor: pointer;
-    }
-
-
-    .readmore2,
-    .readmore3,
-    .readmore4 {
-
-      background-color: #6a8cac8f;
-    }
-
-
-
-
-    .rules2,
-    .rules3,
-    .rules4 {
-      display: none;
-
-
-    }
-
-    .qAnda {
-      text-decoration: underline;
-      color: #bd5832;
-    }
-
-    .number {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      margin-right: 5px;
-      line-height: 24px;
-      border-radius: 10px;
-      color: #fff;
-      text-align: center;
-      background-color: #a08260;
-
-
-    }
-
-
-
-    @media screen and (min-width: 900px) and (max-width: 1600px) {
-
-
-      .navbar-nav {
-        width: 270px;
-      }
-
-
-
-
-
-
-
-
-    }
-
-    @media screen and (max-width: 899px) {
-
-      .item {
-        display: inline-block;
-        width: 100%;
-
-
-      }
-
-      .item p {
-        font-size: 14px;
-        line-height: 30px;
-        margin: 20px auto;
-        z-index: 4;
-
-      }
-
-
-
-
-
-
-      .c_center {
-        width: 100%;
-      }
-
-      .dogs {
-
-        width: 100%;
-        margin-top: 0px;
-
-      }
-
-      .navbar-nav>li {
-        width: 85px;
-      }
-
-      .btn-5 a p {
-        letter-spacing: 1px
-      }
-
-      .readmore1,
-      .readmore2 {
-        display: inline;
-      }
-
-
-
-
-
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/houseloanstyle.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>新版網站樣式</title>
 
 </head>
 
 <body>
-
-  <!-- <div id="loading">
-    <div class="loader">
-      <div class="loader-inner ball-pulse-sync">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <p style="margin-top: 10px;">請稍等…</p>
-    </div>
-  </div> -->
-
-  <div id="wrapper" class=".container-fluid">
+  <!-- script要引入必須要在body下方 中間不能被其他標籤隔開 -->
+  <script src="./scripts/header.js"></script>
 
 
-
-    <!--內容物-->
-    <div id="content">
-
-
-
-
-
-      <div id="backhome">
-        <span id="logo">好事貸樣式表</span>
-        <div class="title">
-        </div>
-
-        <!--navbar -->
-
-        <div id="menu">
-
-
-          <ul class="navbar-nav navbar-center" style="display: none;">
-            <li class="btn-5"><a href="about.html"><img class="bgtag" src="img/btn01.png">
-                <p><img class="motag" src="img/tag01.png">關於我們</p>
-              </a></li>
-            <li class="btn-5"><a href="paint.html"><img class="bgtag" src="img/btn02.png">
-                <p><img class="motag" src="img/tag02.png">繪圖委託</p>
-              </a></li>
-            <li class="btn-5"><a href="design.html"><img class="bgtag" src="img/btn03.png">
-                <p><img class="motag" src="img/tag03.png">設計委託</p>
-              </a></li>
-            <li class="btn-5"><a href="mode.html"><img class="bgtag" src="img/btn04.png">
-                <p><img class="motag" src="img/tag04.png">套版公版</p>
-              </a></li>
-
-          </ul>
-
-        </div>
-
+  <div id="wrap">
+    <!-- 第1項 -->
+    <div class="group mx-auto">
+      <div class="yummy accordion-collapse collapse show" id="panelsStayOpen-collapseOne"
+        class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <p>2-1.基礎樣式範例</p>
+        <h2 style="margin:80px auto 50px; width: 800px; text-align: center;">我是h2標題範例</h2>
+        <h3 style="margin:50px auto 20px; width: 800px; text-align: center;">我是h3標題範例</h3>
+        <ul style="margin:35px auto; width: 800px; text-align: center; margin-left: -30px;">
+          <li>一般表單第一項</li>
+          <li>一般表單第二項</li>
+          <li>一般表單第三項</li>
+        </ul>
+        <ol style="margin:35px auto; width: 800px; text-align: center; margin-left: -30px;">
+          <li>數字表單第一項</li>
+          <li>數字表單第二項</li>
+          <li>數字表單第三項</li>
+        </ol>
+        <p style="margin:35px auto; width: 800px; text-align: center; "><a style="text-decoration: none;"
+            href="#">我是超連結</a></p>
+        <p style="padding:30px;">
+          新冠疫情重創台灣經濟，為了協助民眾及企業度過難關，政府推出紓困補助及紓困貸款等措施。但有些民眾擔心，申請勞工紓困貸款會影響到日後買房的貸款成數和利率，一方面因為疫情影響需要資金紓困、另一方面又怕影響房貸成數，該怎麼辦才好？
+        </p>
 
       </div>
 
 
 
+      <div class="introBox">
+        <p class="intro">影響這篇文章（被包裹區塊內）的h2、h3標題、ul一般表單、ol數字表單、li表單項目、a超連結的元素、文章的行高</p>
+        <p class="intro">Step1. 複製這串內容<br>
+          Step2. 貼到文章的文字(html)編輯頁面<br>
+          Step3. 先在預覽編輯頁貼好文章，再分別把<mark>標籤頭</mark>及<mark>標籤尾</mark>貼到<mark>第一行</mark>及<mark>最後一行</mark><br>
 
+        </p>
+      </div>
 
 
-      <div class="c_center">
+      <div class="copyArea">
 
-        <div id="route">
-          <span><a href="index.html">首頁</a> > <a>流程與規則</a> </span>
-        </div>
-
-
-        <div class="dogs">
-
-
-          <div class="readmore1"><span class="sTitle">1.段落行高</span></div>
-          <div class="readmore2"><span class="sTitle">2.標題表單字型</span></div>
-          <div class="readmore3"><span class="sTitle">3.各類表格</span></div>
-          <div class="readmore4"><span class="sTitle">4.問答及延伸閱讀</span></div>
-
-          <div class="item">
-
-            <div class="rules1">
-              <h3>1-1.調整整體行高/文字屬性</h3>
-              <img src="img/line-height.jpg">
-
-
-
-              <div class="explain">
-
-
-
-
-                <p>【說明】<br>1. 複製貼上word文章後，切換到『文字』分頁編輯html<br>2. 文章最開頭處加上＜div
-                  class="yummy"＞<br><span style="color: #dd6707">3. (可省略)</span>文章最尾端加上＜/div> <span
-                    style="color: #dd6707">wp防呆:加了籤頭，按下預覽籤尾會自己出現，故可省略。</span></p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly"
-                    rows="5"><!--加在文章最開頭--><div class="yummy"></textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-              <img src="img/yummyClass.jpg">
-
-              <img src="img/yummyClass2.jpg">
-
-              <!-- 把yt嵌入影片改為RWD(不會裁切到標題跟臉) -->
-              <h3 style="margin-top: 100px;">1-2.把yt嵌入影片改為RWD(僅適用16:9的比例)</h3>
-              <img src="img/videoRWD.jpg">
-
-
-
-              <div class="explain">
-
-
-                <p>
-
-                  【說明】<br>1. 複製下面這段文字貼到html編輯頁面<br>
-                  2. embed標籤中間貼上youtube網址
-                </p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly"
-                    rows="5"><div class="video-container">[embed]youtube影片網址[/embed]</div></textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-              <img src="img/videoRWD2.jpg">
-
-
-
-
-
-            </div>
-
-           
-
-            <div class="rules2">
-              <h3>2-1.h2、h3、預設列表</h3>
-
-              <a href="https://reurl.cc/zWaV1p">實際內容請見</a>
-
-
-
-              <div class="explain">
-
-
-
-
-                <p>【說明】如果你已經在文章的html編輯頁最上方貼了＜div class="yummy"＞<br>
-                  被h2、h3、ul與li、ol與li標籤包裹住的地方，會自動填上預設的顏色</p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly"
-                    rows="5"><!--加在文章最開頭--><div class="yummy"></textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-
-              <h3>普通表單</h3>
-              <img src="img/普通表單.jpg">
-              
-
-
-              <div class="explain">
-
-                
-
-
-
-                <p>＜ul＞＜/ul＞標籤是表單的外框，如果要增加項目數量請複製貼上內部的＜li＞＜／li＞標籤組</p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly"
-                    rows="5"><ul>
-                      <li>第1項</li>
-                      <li>第2項</li>
-                      <li>第3項</li>
-                    </ul>
-                  </textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-              <h3>介紹型表單</h3>
-
-
-              <img src="img/介紹型表單.jpg">              
-
-
-              <div class="explain">
-
-
-
-
-                <p>這種表單奇數＜li＞＜／li＞是標題，偶數＜li＞＜／li＞標籤組是敘述（敘述會自己變成黑色細字不用手動修改）</p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly"
-                    rows="5">
-                    <ul class="introul">
-                      <li>第1項</li>
-                      <li>第1項的敘述</li>
-                      <li>第2項</li>
-                      <li>第2項的敘述</li>
-                      <li>第3項</li>
-                      <li>第3項的敘述</li>
-                    </ul>
-                  </textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-
-
-            </div>
-
-
-            <div class="rules3">
-
-
-              <h3>3-1.基本表格-兩欄</h3>
-              <!-- 暫時用圖片代替 -->
-
-              <table class="yTable_2x6">
-                <tbody>
-                  <tr>
-                    <td>作業天數</td>
-                    <td>7天</td>
-                  </tr>
-                  <tr>
-                    <td>利息</td>
-                    <td>前五年免息</td>
-                  </tr>
-                  <tr>
-                    <td>申請文件</td>
-                    <td>身分證、申請表</td>
-                  </tr>
-                  <tr>
-                    <td>申請難度</td>
-                    <td><span class="star">★★★★★</span></td>
-                  </tr>
-                  <tr>
-                    <td>優點</td>
-                    <td>利率低</td>
-                  </tr>
-                  <tr>
-                    <td>缺點</td>
-                    <td>審核嚴謹，過件率不高</td>
-                  </tr>
-                </tbody>
-              </table>
-
-
-
-              <div class="explain">
-
-
-
-
-                <p>【說明】複製下面的class樣式，貼到文章html表格標籤的＜table＞中，如下圖所示的位置</p>
-
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly" rows="5">class="yTable_2x6"</textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-              <img src="img/position.jpg">
-
-
-
-
-
-
-
-
-              <!-- 表現範例2-->
-
-              <h3>3-2.對決式表格-3欄</h3>
-              <table class="yTable_pk" style="width: 80%; margin: 0 auto;">
-                <tbody>
-                  <tr>
-                    <td>比較</td>
-                    <td>好房貸</td>
-                    <td>銀行二胎</td>
-
-                  </tr>
-                  <tr>
-                    <td>組織規模</td>
-                    <td>股票上市公司</td>
-                    <td>股票上市公司</td>
-
-                  </tr>
-                  <tr>
-                    <td>年利率</td>
-                    <td>7%-14%</td>
-                    <td>2.49%-16%</td>
-
-                  </tr>
-                  <tr>
-                    <td>額度</td>
-                    <td>300萬</td>
-                    <td>300萬</td>
-                  </tr>
-                  <tr>
-                    <td>過件率</td>
-                    <td><span>高</span></td>
-                    <td>低</td>
-
-                  </tr>
-                  <tr class="stress">
-                    <td>貸款成數</td>
-                    <td><span>鑑價110%</span></td>
-                    <td>鑑價90%</td>
-
-                  </tr>
-                  <tr>
-                    <td>特點</td>
-                    <td><span>流程簡便、撥款快</span></td>
-                    <td>利率低、過件率低</td>
-
-                  </tr>
-
-                </tbody>
-              </table>
-
-
-              <div class="explain">
-
-
-
-
-                <p>【說明】複製下面的class樣式，貼到文章html表格標籤的＜table＞中，如下圖所示的位置</p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly" rows="5">class="yTable_pk"</textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-
-
-
-
-
-
-
-
-
-              <!-- 表現範例3-->
-
-              <h3>3-3.多欄式表格</h3>
-              <table class="yTable_multi" style="width: 80%; margin: 0 auto;">
-                <tbody>
-                  <tr>
-                    <td>管道比較</td>
-                    <td>借款容易度</td>
-                    <td>利率</td>
-                    <td>額度</td>
-                    <td>貸款風險</td>
-                  </tr>
-                  <tr>
-                    <td>找親友周轉</td>
-                    <td>★★★★★</td>
-                    <td>可談</td>
-                    <td>可談</td>
-                    <td>感情破裂</td>
-                  </tr>
-                  <tr>
-                    <td>信用貸款</td>
-                    <td>★★★★</td>
-                    <td>2%~16%</td>
-                    <td>1-350萬</td>
-                    <td>審核嚴格</td>
-                  </tr>
-                  <tr>
-                    <td>汽車貸款</td>
-                    <td>★★★</td>
-                    <td>4%~16% </td>
-                    <td>10-350萬</td>
-                    <td>老車額度不高</td>
-                  </tr>
-                  <tr>
-                    <td>房屋貸款</td>
-                    <td>★★★★★</td>
-                    <td>1.3%~16%</td>
-                    <td>10萬-無上限</td>
-                    <td>審核嚴格</td>
-                  </tr>
-                  <tr class="stress">
-                    <td>好事貸二胎</td>
-                    <td class="star">★★</td>
-                    <td>7%~14%</td>
-                    <td>30-300萬</td>
-                    <td>審核太寬鬆</td>
-                  </tr>
-                  <tr>
-                    <td>民間貸款</td>
-                    <td>★</td>
-                    <td>20%以上</td>
-                    <td>1萬-無上限</td>
-                    <td>金主不明、利率過高</td>
-                  </tr>
-                  <tr>
-                    <td>青創貸款</td>
-                    <td>★★★★★</td>
-                    <td>1.67%</td>
-                    <td>10-2000萬</td>
-                    <td>生意不佳貸款照還</td>
-                  </tr>
-                </tbody>
-              </table>
-
-
-
-              <div class="explain">
-
-
-
-
-                <p>【說明】複製下面的class樣式，貼到文章html表格標籤的＜table＞中，如下圖所示的位置</p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly" rows="5">class="yTable_multi"</textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-                </div>
-
-
-
-
-
-
-              </div>
-
-              <h3>3-4.多欄式表格(低於800px下方出現卷軸)</h3>
-              <div class="moveRight">
-                <table class="yTable_multi2" style=" margin: 0 auto;">
-                  <tbody>
-                    <tr>
-                      <td colspan="2">→ 向右滑動看更多</td>
-                      </tr>
-                    <tr>
-                      <td>管道比較</td>
-                      <td>借款容易度</td>
-                      <td>利率</td>
-                      <td>額度</td>
-                      <td>貸款風險</td>
-                    </tr>
-                    <tr>
-                      <td>找親友周轉</td>
-                      <td>★★★★★</td>
-                      <td>可談</td>
-                      <td>可談</td>
-                      <td>感情破裂</td>
-                    </tr>
-                    <tr>
-                      <td>信用貸款</td>
-                      <td>★★★★</td>
-                      <td>2%~16%</td>
-                      <td>1-350萬</td>
-                      <td>審核嚴格</td>
-                    </tr>
-                    <tr>
-                      <td>汽車貸款</td>
-                      <td>★★★</td>
-                      <td>4%~16% </td>
-                      <td>10-350萬</td>
-                      <td>老車額度不高</td>
-                    </tr>
-                    <tr>
-                      <td>房屋貸款</td>
-                      <td>★★★★★</td>
-                      <td>1.3%~16%</td>
-                      <td>10萬-無上限</td>
-                      <td>審核嚴格</td>
-                    </tr>
-                    <tr class="stress">
-                      <td>好事貸二胎</td>
-                      <td class="star">★★</td>
-                      <td>7%~14%</td>
-                      <td>30-300萬</td>
-                      <td>審核太寬鬆</td>
-                    </tr>
-                    <tr>
-                      <td>民間貸款</td>
-                      <td>★</td>
-                      <td>20%以上</td>
-                      <td>1萬-無上限</td>
-                      <td>金主不明、利率過高</td>
-                    </tr>
-                    <tr>
-                      <td>青創貸款</td>
-                      <td>★★★★★</td>
-                      <td>1.67%</td>
-                      <td>10-2000萬</td>
-                      <td>生意不佳貸款照還</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-
-
-                <div class="explain">
-
-
-
-
-                  <p>【說明】1.請建立一個div外框class樣式為moveright<br>
-                    2.複製下面的class樣式，貼到文章html表格標籤的＜table＞中<br>
-                    3.把table移進去
-                    ※已改成外框會自己出現＂向左滑動看更多＂的字
-
-                  </p>
-                  <div style="display: flex;">  
-                    <textarea class="js-copytextarea" readonly="readonly" rows="5"><div class="moveRight"><table class="yTable_multi2"><tbody>把其他表格移進來這裡</table></div></textarea>
-                    <button class="js-textareacopybtn submitButton">複製內容</button>
-  
-                  </div>
-  
-  
-  
-  
-  
-  
-                </div>
-
-              
+        <textarea class="content" name="基礎樣式">
+            <!-- 貼在第一行 -->
+            <div class="yummy">
              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- 貼在最後一行 -->
             </div>
+          </textarea>
+        <button class="copyBtn">複製</button>
+      </div>
 
+    </div>
 
 
-            <div class="rules4">
-              <h3>4-1.延伸閱讀</h3>
-              <div class="readmore" style="width:80%; margin: 0 auto; font-weight: 600;">
-                <button>延伸閱讀</button>
-                <a href="#" style="color: rgb(13, 79, 145);">這裡放你的連結標題</a>
 
-              </div>
 
+    <!-- 第2項 -->
+    <div class="group mx-auto">
+     
+      <div class="yummy">
+        <p>2-2.影片RWD</p>
+        <img src="img/videoRWD.jpg" width="800" style="margin: 50px auto;">
+      </div>
 
 
-              <div class="explain">
 
+      <div class="introBox">
+        <p class="intro">使16:9的影片隨螢幕寬度縮放</p>
+        <p class="intro">Step1. 複製這串內容<br>
+          Step2. 貼到文章的文字(html)編輯頁面<br>
+          Step3. 把影片網址貼到對應的位置
+        </p>
+      </div>
 
 
+      <div class="copyArea">
 
-                <p>【說明】複製下面的html，貼到wordpress的html修改頁中，將對應位置的文章標題及文章連結貼上</p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly" rows="5"><div class="readmore"><button>延伸閱讀</button><a href="連結網址">這裡放你的連結標題</a></div>
-                  </textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-              </div>
-
-              <h3 style="margin-top: 100px;">4-2.問與答</h3>
-
-              <ul class="QA" style="text-align:left; width:80%; margin: 0 auto; font-weight: 600;">
-                <li><span>Q</span>機車還有貸款可以增貸嗎？</li>
-                <li><span>A</span><span>可以</span>，只要前貸繳滿6-8期就可以申請機車二貸。</li>
-              </ul>
-
-
-
-              <div class="explain">
-
-
-
-
-                <p>【說明】複製下面的html，貼到wordpress的html修改頁中，並把對應的問題答案填入</p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly" rows="5"><ul class="QA"><li><span class="none">Q</span>你的問題</li><li><span class="none">A</span><span>可以或不可以</span>你的答案</li></ul>
-                  </textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-              </div>
-
-
-              <h3 style="margin-top: 100px;">4-3.小知識</h3>
-
-              <ul class="Tips" style="background-color: #fff;">
-                <li>
-
-                  <img src="https://test.houseloan.tw/wp-content/uploads/2021/11/8279燈泡.png"
-                    style="width: 20px; margin-right: 5px;" />
-
-                  Tips.什麼是債務整合？
-                </li>
-                <li>名下有信用卡循環、信用卡分期、現金卡、信貸、車貸等利率較高的債務，借一筆額度較高、利率較低的貸款，把這些利率高的債務都還掉，只留下後面這一筆貸款，這就是債務整合。</li>
-              </ul>
-              <div class="explain">
-
-
-
-
-                <p>【說明】複製下面的html，貼到wordpress的html修改頁中，並把對應的問題答案填入<br>
-                  ※小圖示因為會被拉長，現已刪除，改成由程式端自動補上（還在編修尚未完成）
-                </p>
-                <div style="display: flex;">
-
-                  <textarea class="js-copytextarea" readonly="readonly" rows="5"><ul class="Tips"><li>
-小知識標題</li><li>你的解釋</li></ul>
-                  </textarea>
-                  <button class="js-textareacopybtn submitButton">複製內容</button>
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-
-              </div>
-
-
-
+        <textarea class="content" name="16:9影片RWD">
+            <div class="video-container">
+              [embed]youtube影片網址[/embed]
             </div>
+          </textarea>
+        <button class="copyBtn" style="height: 100px;">複製</button>
+      </div>
 
+    </div>
 
+    <!-- 第3項 -->
+    <div class="group mx-auto">
 
-          </div>
-
-
-
-
-
-
-
-        </div>
-
+      
+       
+      
+      <div class="yummy" >
+        <p>2-3.介紹型表單</p>
+        <ul class="introul" style="margin:35px auto; width: 800px; text-align: center; margin-left: -30px;">
+          <li>介紹型表單第一項</li>
+          <li>第一項的內容說明</li>
+          <li>一般表單第二項</li>
+          <li>第一項的內容說明</li>
+          <li>一般表單第三項</li>
+          <li>第三項的內容說明</li>
+        </ul>
 
 
 
@@ -1002,10 +130,112 @@
 
 
 
+      <div class="introBox">
+        <p class="intro">奇數欄＜li＞＜/li>標籤是項目標題，偶數欄＜li＞＜/li>是項目內容說明</p>
+        <p class="intro">Step1. 複製這串內容<br>
+          Step2. 貼到文章的文字(html)編輯頁面<br>
+          Step3. 將項目標題＆項目內容說明，貼到對應的位置
+        </p>
+      </div>
+
+
+      <div class="copyArea">
+
+        <textarea class="content" name="介紹型表單">
+            <ul class="introul">
+              <li>第1項</li>
+              <li>第1項的敘述</li>
+              <li>第2項</li>
+              <li>第2項的敘述</li>
+              <li>第3項</li>
+              <li>第3項的敘述</li>
+            </ul>
+          
+          </textarea>
+        <button class="copyBtn"  style="height: 230px;">複製</button>
+      </div>
+
     </div>
 
 
+     <!-- 第4項 -->
+     <div class="group mx-auto">
 
+      
+      <div class="yummy">
+        <p>2-4.缺點(目前只有123貸有喔)</p>
+        
+        <p style="margin:10px auto -60px;">可以單獨使用，也可以與介紹型表單並用</p>
+        <ul class="introul down">
+          <li>審核嚴</li>
+          <li>當申請人信用瑕疵、工作、收入證明不明確，負債比過高，信用評分不足時，房屋增貸不易過件。</li>
+ 	        <li>額度小</li>
+        <li>原貸款銀行房屋鑑價通常會較保守，因鑑價後增值空間不大，房屋增貸成功機率通常不高，或核貸金額較低。</li>
+        </ul>
+
+        
+      </div>
+
+
+      <div class="introBox">
+        <p class="intro">如果你需要在文中強調某些標題，特殊標題是除了h2、h3以外的選擇</p>
+        <p class="intro">Step1. 複製這串內容<br>
+          Step2. 貼到文章的文字(html)編輯頁面<br>
+          Step3. 修改文字內容
+        </p>
+      </div>
+
+
+      <div class="copyArea">
+
+        <textarea class="content" name="缺點">
+          <ul class="down">
+            <li>第1項</li><li>第2項</li><li>第3項</li>
+          </ul>
+          
+          <!-- 與介紹型表單並用的狀況 -->
+          <ul class="introul down">
+            <li>第1項</li><li>第2項</li><li>第3項</li><li>第4項</li>
+          </ul>
+          
+          </textarea>
+        <button class="copyBtn">複製</button>
+      </div>
+
+    </div>
+
+      <!-- 第5項 -->
+      <div class="group mx-auto">
+
+      
+        <div class="yummy">
+          <p>2-5.特殊標題(好事貸/123貸)</p>
+          <p class=yPoint style="margin: 30px;">新鑫、銀行與民間二胎的比較</p>
+          <p class=yPoint2 style="margin: 30px;">新鑫、銀行與民間二胎的比較</p>
+        </div>
+  
+  
+        <div class="introBox">
+          <p class="intro">如果你需要在文中強調某些標題，特殊標題是除了h2、h3以外的選擇</p>
+          <p class="intro">Step1. 複製這串內容<br>
+            Step2. 貼到文章的文字(html)編輯頁面<br>
+            Step3. 修改文字內容
+          </p>
+        </div>
+  
+  
+        <div class="copyArea">
+  
+          <textarea class="content" name="特殊標題">
+            <p class=yPoint>
+              你的標題文字
+            </p>
+            
+            </textarea>
+          <button class="copyBtn"  style="height:90px;">複製</button>
+        </div>
+  
+      </div>
 
 
 
@@ -1017,134 +247,37 @@
 
 
 
-  <footer>
-    <p align="center">©2021 yummy </p>
-
-  </footer>
-
-
-  </div>
-
-  <script type="text/javascript">
-
-    $(window).load(function () {
-      $('#loading').fadeOut(1000);
-    });
-
-    var prevScrollpos = window.pageYOffset;
-
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      var newWindowWidth = $(window).width();
-
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("backhome").style.top = "0";
-        document.getElementById("menu").style.opacity = "1";
-
-      } else {
-        document.getElementById("backhome").style.top = "-61px";
-        if (newWindowWidth < 899) {
-          document.getElementById("menu").style.opacity = ".6";
-        }
-
-
-      }
-      prevScrollpos = currentScrollPos;
-    }
-
-    $(document).ready(function () {
 
 
 
 
-      $(".readmore1").click(function () {
-        $(".readmore1").css({ "background-color": "#4b5ea3", "padding": "12px" });
-        $(".readmore2").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore3").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore4").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".item").css("box-shadow", "10px 10px #6a8cac8f");
-        $(".rules2").hide();
-        $(".rules3").hide();
-        $(".rules4").hide();
-        $(".rules1").show();
+
+
+
+  <script>
+    // 選取對應陣列的內容並複製到剪貼簿        
+
+    let contentElements = document.querySelectorAll('.content');
+    let copyBtnElements = document.querySelectorAll('.copyBtn');
+    document.querySelector
+    let showblock = document.querySelector('#show');
+
+    copyBtnElements.forEach(function (button, index) {
+
+      button.addEventListener('click', function () {
+        contentElements[index].select();
+        navigator.clipboard.writeText(contentElements[index].value);
+        // 複製的物件出現在showblock區域
+        showblock.textContent = '已複製' + contentElements[index].name;
       });
-
-
-      $(".readmore2").click(function () {
-        $(".readmore2").css({ "background-color": "#4b5ea3", "padding": "12px" });
-        $(".readmore1").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore3").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore4").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".item").css("box-shadow", "5px 10px #6a8cac8f");
-        $(".rules1").hide();
-        $(".rules3").hide();
-        $(".rules4").hide();
-        $(".rules2").show();
-      });
-
-      $(".readmore3").click(function () {
-        $(".readmore3").css({ "background-color": "#4b5ea3", "padding": "12px" });
-        $(".readmore1").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore2").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore4").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".item").css("box-shadow", "-5px 10px #6a8cac8f");
-        $(".rules1").hide();
-        $(".rules2").hide();
-        $(".rules4").hide();
-        $(".rules3").show();
-      });
-
-      $(".readmore4").click(function () {
-        $(".readmore4").css({ "background-color": "#4b5ea3", "padding": "12px" });
-        $(".readmore1").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore2").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".readmore3").css({ "background-color": "#6a8cac8f", "padding": "10px 0px" });
-        $(".item").css("box-shadow", "-10px 10px #6a8cac8f");
-        $(".rules1").hide();
-        $(".rules2").hide();
-        $(".rules3").hide();
-        $(".rules4").show();
-      });
-
-
-
-    });
-    //複製CSS
-    window.onload = function () {
-      // Get all the elements that match the selector as arrays
-      var copyTextareaBtn = Array.prototype.slice.call(document.querySelectorAll('.js-textareacopybtn'));
-      var copyTextarea = Array.prototype.slice.call(document.querySelectorAll('.js-copytextarea'));
-
-      // Loop through the button array and set up event handlers for each element
-      copyTextareaBtn.forEach(function (btn, idx) {
-
-        btn.addEventListener("click", function () {
-
-          // Get the textarea who's index matches the index of the button
-          copyTextarea[idx].select();
-
-          try {
-            var msg = document.execCommand('copy') ? 'successful' : 'unsuccessful';
-            console.log('Copying text command was ' + msg);
-          } catch (err) {
-            console.log('Whoops, unable to copy');
-          }
-
-        });
-
-      });
-    }
+    }); 
   </script>
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 
 
 </body>
-
-
-
 
 </html>
