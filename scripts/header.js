@@ -9,5 +9,6 @@ header =`<nav class="header">
 你複製了什麼?
 </p>
 </nav>
+<a href="debug.html"><div class="protect">保護眼睛計畫</div></a>
 `;
 document.write(header);
