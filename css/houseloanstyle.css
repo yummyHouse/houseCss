@@ -536,35 +536,43 @@ color: rgb(22, 39, 39);
 .addFirst tr>td:first-child{
 	width:25%;
 }
-/*指定第一格寬度*/
 
 
-.Tips{
-	margin:50px 0px 80px;
-	padding:10px 25px 20px;
-	list-style:none;
-	
-	border:1px solid #a0bbe7;
-	border-left:10px solid #a0bbe7;
-	
-}
-.Tips>li:nth-child(1){
-	color:#c78f42;	
-	font-style: italic;
-	font-weight: 400;
-	display:flex;
-	border-bottom:1px solid #a0bbe7;	
-	padding-bottom:10px;
-	background-image: url('./');
+/*小提示---開始*/
+.Tips{ font-weight:400; padding:10px 25px;	list-style:none; border:1px solid #a0bbe7; border-left:10px solid #a0bbe7;}
+
+.Tips hx{
+	color:#745a36; display:flex;	border-bottom:1px solid #a0bbe7;
 }
 
+.Tips hx::before{
+		content:url('https://houseloan.tw/wp-content/uploads/2022/07/tips_pin-1.png');
+		margin-right:15px;
+}
+	
+.Tips p{
+		color:#333;
+		font-weight:400;
+		list-style:none;
+		padding-top:12px;
+		text-align: left;
+}
 
+
+/*小提示---之後會刪掉*/
+.Tips>li:first-child{	color:#745a36; font-weight:500;	display:flex;	border-bottom:1px solid #a0bbe7;}
+.Tips>li:first-child::before{
+		content:url('https://houseloan.tw/wp-content/uploads/2022/07/tips_pin-1.png');
+		margin-right:15px;
+	}
+	
 .Tips>li:nth-child(2){
-	list-style:none;
-	font-weight: 400;
-	padding-top:12px;
-}
-
+		color:#333;		
+		list-style:none;
+		padding-top:12px;
+	}
+/*小提示---之後會刪掉*/
+/*小提示---結束*/
 
    
    
@@ -616,59 +624,36 @@ color: rgb(22, 39, 39);
    }
    .readmore a:hover::after{		
      width:100%;
-     left: 0%;	
-		
+     left: 0%;		
                
    }
    
 /*延伸閱讀樣式-下方卷軸--結束*/
 
-/*超連結的下方橫條*/
-.readmore a::after{
-	 position: absolute;
-   border-radius: 5px;
-   left: 50%;
-   content: '';
-   width: 0%;
-   height: 3px;
-   display: block;
-   background-color:#c78f42;
-   transition: all 0.4s ease-in-out;
-}
-/*hover*/
-.readmore a:hover{
-	color:#bd6b2b;
-	font-weight:600;
-}
-.readmore a:hover::after{		
-	width:100%;
-    left: 0%;	
-            
-}
-
-/*延伸閱讀樣式--結束*/
 
 
-/*問答--開始*/
+
+
+
+
+/*舊版問答--開始 之後會刪除*/
 .QA{
 	margin:40px 0px 40px -40px;	
 }
-.QA li:nth-child(2) span{
-	color: tomato;	
-}
+
 .QA li{		
 	list-style:none;
 	padding:10px 20px;
 	margin-top:5px;	
-	background-color:#e5f0fd;
+	background-color:#ecf3fb;
 	
 }
-.QA li:nth-child(1){
-	color:#477fdd;
+.QA li:nth-child(odd){
+	color:#385781;
 	font-weight:600;
-	background-color:#ffec98b5;
+	background-color:#ffec9847;
 }
-.QA li:nth-child(2){
+.QA li:nth-child(even){
 	font-weight:400;
 	color:#2d3460;
 	
@@ -677,7 +662,7 @@ color: rgb(22, 39, 39);
 .QA li span.none{
 	padding:5px 15px;
 	font-weight:600;
-	background-color:#477fdd;
+	background-color:#385781;
 	display:inline-block;
 	border-radius:20px;
 	color:#fff;
@@ -687,7 +672,55 @@ color: rgb(22, 39, 39);
 	font-weight:600;
 	color:#cd3984;	
 }
+/*舊版問答--結束 之後會刪除*/
+
+/*問答--開始*/
+.QA2{
+margin:40px 0px 40px -40px;	
+}
+
+.QA2 hx{
+color:#385781;
+font-weight:600;
+background-color:#fff9de;
+display: block;	
+padding: 10px 20px;	
+}
+
+.QA2 li{		
+list-style:none;
+background-color:#ecf3fb;	
+}
+
+.QA2 li p{
+font-weight:400;
+color:#333;
+text-align: left;
+line-height: 2rem;	
+padding: 10px 10px 15px 20px;
+}
+
+.QA2 span.none{
+line-height:50px;
+padding:0px 15px;
+font-weight:600;
+background-color:#385781;
+display:inline-block;
+border-radius:20px;
+color:#fff;
+margin-right:20px;
+}
+
+.QA2 li mark{
+font-weight:600;
+color:#cd3984;	
+}
 /*問答--結束*/
+
+
+
+
+
 /* 氣球 */
 .balloonBox{
 	justify-content:center;

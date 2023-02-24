@@ -51,12 +51,10 @@
    }
 
     mark{
-      background-color: rgb(253, 255, 134);
+      background-color: rgb(250, 252, 162);
     }
 
-    mark:nth-child(even){
-      background-color: rgb(208, 233, 176);
-    }
+    
 
     .smallTitle{         
       margin: 50px 10px;               

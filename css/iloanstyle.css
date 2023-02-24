@@ -1,0 +1,754 @@
+mark {
+    transition: color 300ms ease-out;
+    background: linear-gradient(to top, rgba(255, 235, 70, 0.6) 1em, transparent 1em);
+}
+
+mark-red {
+    transition: color 300ms ease-out;
+    background: linear-gradient(to top, rgba(245, 18, 70, 0.3) 1em, transparent 1em);
+}
+
+mark-green {
+    transition: color .3s ease-out;
+    background: linear-gradient(to top, rgba(25, 255, 10, 0.5), rgba(255, 255, 255, 0));
+}
+
+mark-blue {
+    transition: color .300ms ease-out;
+    background: linear-gradient(to top, rgba(130, 200, 210, 0.5), 1em, transparent 1em);
+}
+
+h1:not(.site-title):before, h2:before {
+    /* 	width:40%;
+        background-color:#f5d4b8;*/
+    margin: 20px 0px;
+    background-color: #fff;
+}
+
+.yummy {
+    margin: 80px 0px 80px 10px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Noto Sans TC', sans-serif;
+    /*段落margin: 1.5rem 0px;*/
+}
+
+.yummy p {
+    line-height: 3.2rem;
+}
+
+.yummy h2 {
+    margin: 50px 0px 20px;
+    color: #e3803a;
+    font-size: 36.5px;
+    font-weight: 800;
+}
+
+.yummy h3 {
+    font-size: 29px;
+    color: #a14418;
+}
+
+.yummy h4 {
+    font-size: 2.6rem;
+    color: #89541f;
+}
+
+.yummy p>a {
+    transition: 0.3s;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+
+}
+
+.yummy p>a::after {
+    transition: 0.3s;
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #cd2653;
+    height: 2px;
+    width: 100%;
+    margin-top: -5px;
+
+
+}
+
+.yummy p>a:hover {
+    background-color: #ffe2d7;
+
+}
+
+.yummy p>a:hover::after {
+    opacity: 0%;
+}
+
+.yummy ul {
+    margin: 30px 5px 60px 5px;
+
+    /* 想要放圖片 */
+    list-style: url("https://0800213886.com.tw/wp-content/uploads/2021/12/listStyle-e1638866091318.png");
+
+}
+
+.yummy ul>li {
+    line-height: 2.8rem;
+    font-weight: 600;
+    color: #e46247;
+    margin: 12px 30px;
+}
+
+.yummy ol {
+    list-style: inside numbers;
+}
+
+.yummy ol>li {
+    line-height: 2.8rem;
+    margin: 0px 0px 20px 20px;
+}
+
+.yummy ol>li:before {
+    position: absolute;
+    mix-blend-mode: multiply;
+    margin: -25px -5px;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background: #ffe0a6;
+}
+
+.yummy table li {
+    list-style: none;
+}
+
+.yummy .introul>li:nth-child(odd) {
+    margin-top: 40px;
+}
+
+.yummy .introul>li:nth-child(even) {
+    list-style: none;
+    font-weight: 400;
+    color: black;
+}
+
+
+.noshow_h2 {
+    font-weight: 800;
+    font-size: 36.5px;
+    letter-spacing: 0.02em;
+    color: #e3803a;
+}
+
+.stressinLi {
+    background-color: #fff5b7db;
+    font-weight: 600;
+    color: red;
+
+}
+
+.allOK {
+    margin: 100px 10px;
+    border: 1px dashed #f5912a;
+    padding: 20px;
+    color: rgb(67, 83, 88);
+    background-color: #f9f6ee;
+}
+
+
+/*強調星星顏色*/
+.star {
+    color: orange;
+    font-size: 26px;
+}
+
+/* 畫重點*/
+.yPoint {
+    margin-left: 10px;
+    color: #ed9e91;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 2px dotted #ed9e91;
+    margin: 50px 0px;
+}
+
+/* 縱狀表格*/
+.yTable_2ver {
+    text-align: center;
+
+}
+
+.yTable_2ver tr:first-child>td:nth-child(odd) {
+    background-color: #fdcaa9;
+    border: 1px solid #fdcaa9;
+    color: #4c391d;
+    font-weight: 600;
+}
+
+.yTable_2ver tr:first-child>td:nth-child(even) {
+    background-color: #c17768;
+    border: 1px solid #c17768;
+    color: #fff;
+    font-weight: 600;
+}
+
+.yTable_2ver tr:not(:first-child)>td:nth-child(even) {
+    background-color: #fff9f4;
+}
+
+.yTable_2ver tr:not(:first-child)>td {
+    border: 1px solid #c17768;
+    border-bottom: 1px dashed #c17768;
+    border-top: none;
+}
+
+
+/* 2欄式表格樣式---開始*/
+.yTable_2x6 {
+    border-collapse: collapse;
+    letter-spacing: 0.1em;
+    border: 1px solid #dd6f61;
+    border-left: 8px solid #dd6f61;
+
+
+}
+
+.yTable_2x6 tr {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.yTable_2x6 tr>td {
+    border: 1px solid #fdcaa9;
+    padding: 15px;
+    background-color: #e9ccbf;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+/* 選擇偶數行的第二欄為底色白色 */
+.yTable_2x6 tr:nth-child(even)>td:not(:first-child) {
+    background-color: #fff;
+    font-weight: 500;
+    color: rgb(22, 39, 39);
+}
+
+/* 選擇奇數行的第二欄為底色淺黃 */
+.yTable_2x6 tr:nth-child(odd)>td:not(:first-child) {
+    font-weight: 500;
+    background-color: #f9f6ee;
+    color: rgb(22, 39, 39);
+}
+
+
+/* 選擇每一行的第一欄*/
+.yTable_2x6 tr>td:first-child {
+    border-bottom: 2px dashed #fff !important;
+    color: #874532;
+    width: 30%;
+}
+
+/* 2欄式表格樣式---結束 */
+
+
+/*多欄式表格 突出好事貸---開始*/
+.yTable_multi {
+    border-collapse: collapse;
+    background-color: #fff;
+
+}
+
+/*上方第一欄*/
+.yTable_multi tr:first-child {
+    background-color: #bb9075;
+    color: #fff;
+    font-weight: 600;
+}
+
+.yTable_multi tr>td:nth-child(even) {
+    background-color: #fffbf5;
+}
+
+
+.yTable_multi tr:first-child>td:nth-child(even) {
+    background-color: #dbcab4;
+    color: #8b3e3e;
+}
+
+
+
+/*左方第一欄*/
+.yTable_multi tr>td:first-child {
+    background-color: #997a66;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+
+}
+
+.yTable_multi tr>td {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-color: #b77b7b;
+
+}
+
+
+
+
+/*強調項目(橫)*/
+.yTable_multi .stress {
+    border: 2px solid #52b5f5;
+    border-left: 10px solid #52b5f5;
+    color: #0a388b;
+    background-color: #e2f6fd;
+}
+
+.yTable_multi .stress>td:nth-child(1) {
+    background-color: #1f5bd7;
+}
+
+/*多欄式表格 突出好事貸---結束*/
+
+/*多欄式表格 下方卷軸---開始*/
+.yTable_multi2 {
+    border-collapse: collapse;
+    margin: 0;
+
+}
+
+.yTable_multi2 tr:first-child>td {
+    background-color: #c39577;
+    color: #fff;
+    font-weight: 600;
+    border-right: 1px solid #fff;
+}
+
+.addTitle>td+td {
+    color: #fff;
+    border-right: 1px solid #fff;
+    background-color: #c39577;
+}
+
+.yTable_multi2 tr {
+    width: 800px;
+
+}
+
+/*左方第一欄*/
+.yTable_multi2 tr>td:nth-child(1) {
+    background-color: #f1e3cf;
+    font-weight: 600;
+    color: #8f5454;
+    border: 1px solid #b59292;
+}
+
+
+
+.yTable_multi2 tr>td {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #b59292;
+
+}
+
+
+
+
+/*強調項目(橫)*/
+.yTable_multi2 .stress {
+    border: 2px solid #52b5f5;
+    border-left: 10px solid #52b5f5;
+    color: #0a388b;
+    background-color: #e2f6fd;
+}
+
+.yTable_multi2 .stress>td:nth-child(1) {
+    background-color: #1f5bd7;
+}
+
+/*多欄式表格 下方卷軸---結束*/
+
+/* 棋盤表格樣式---開始 */
+.yTable_chessboard {
+    margin: 30px auto;
+}
+
+.yTable_chessboard tr>td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #fdcaa9;
+    background-color: rgb(255, 255, 255);
+}
+
+.yTable_chessboard tr:nth-child(odd)>td:nth-child(odd) {
+    background-color: #f9f6ee
+}
+
+.yTable_chessboard tr:nth-child(even)>td:nth-child(even) {
+    background-color: #fff;
+}
+
+/* 棋盤表格樣式---結束 */
+
+.Tips {
+
+    margin-top: 20px;
+    padding: 8px 25px 10px;
+    border: 1px solid #dda96a;
+    border-left: 10px solid #dda96a;
+
+}
+
+.Tips li:first-child {
+    margin-left: 50px;
+    list-style-image: url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
+    color: #aa6829;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.Tips>li:nth-child(2) {
+    border-top: 1px solid #dda96a;
+    list-style: none;
+    padding-top: 20px;
+    color: #584444;
+}
+
+
+/*延伸閱讀樣式--開始*/
+.readmore {
+    position: relative;
+    margin: 80px 0px;
+    display: flex;
+    padding: 30px;
+    background-color: #f9f5f2;
+
+}
+
+.readmore::before {
+    top: -2px;
+    left: -2px;
+    clip-path: polygon(100% 25%, 25% 25%, 25% 100%, 0 100%, 0 0, 100% 0);
+    z-index: 2;
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #f3d198;
+}
+
+.readmore::after {
+    bottom: -2px;
+    right: -2px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 75%, 75% 75%, 73% 0);
+    z-index: 2;
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #f3d198;
+}
+
+.readmore button {
+    background-color: #e67c60;
+    cursor: default;
+    border: none;
+    min-width: 120px;
+    font-size: 18px;
+    padding: 5px 18px;
+    color: #fff;
+
+}
+
+.readmore a {
+    font-weight: 600;
+    margin: 10px 20px;
+    position: relative;
+    box-shadow: 0px 0px #fff;
+    color: #7a302d;
+}
+
+
+/*hover*/
+.readmore a:hover {
+    color: #bd6b2b;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+
+/*延伸閱讀樣式-下方卷軸--結束*/
+
+/*超連結的下方橫條*/
+.readmore a::after {
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    background-color: #c78f42;
+    transition: all 0.4s ease-in-out;
+}
+
+/*hover*/
+.readmore a:hover {
+    color: #bd6b2b;
+    font-weight: 600;
+}
+
+.readmore a:hover::after {
+    width: 100%;
+    left: 0%;
+
+}
+
+/*延伸閱讀樣式--結束*/
+
+
+/*問答--開始*/
+
+.QA:nth-child(odd)>li:nth-child(1) {
+    background-color: #ef917e;
+    box-shadow: 0px 2px #ef917e;
+}
+
+.QA li {
+    list-style: none;
+    padding: 0px 10px;
+    margin-top: 5px;
+    background-color: #fff8ec;
+
+
+
+}
+
+.QA li:nth-child(1) {
+    color: #fff;
+    font-weight: 600;
+    background-color: #dd5858;
+    box-shadow: 0px 2px #dd5858;
+}
+
+.QA li:last-child {
+    color: #563838;
+    font-weight: 500;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.QA li>span {
+    color: red;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.QA li .none {
+    font-size: 18px;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    margin-left: -10px;
+    padding: 5px 30px 0px 20px;
+    background-color: #fff;
+    display: inline-block;
+    color: #dd5858;
+    margin-right: 20px;
+
+}
+
+/*問答--結束*/
+
+
+/*不希望被抓進大綱的小列表--開始*/
+/*不希望被抓進大綱的小列表--結束*/
+
+@media screen and (min-width: 460px) and (max-width: 875px) {
+    .yummy h2 {
+        font-size: 30px;
+    }
+
+    .yummy h3 {
+        font-size: 27px;
+    }
+
+    .yTable_multi {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .yTable_multi tr>td {
+        padding: 12px 8px;
+
+    }
+
+
+
+
+    .yTable_multi2 {
+        font-size: 18px;
+        width: 800px;
+        display: block;
+
+    }
+
+    .yTable_multi2 tr {
+        width: 800px;
+    }
+
+    .moveRight {
+        max-width: 800px;
+        min-width: 430px;
+        overflow: auto;
+    }
+
+    .moveRight::before {
+        content: '向左滑動讀取更多';
+        font-size: 15px;
+        background-color: #996e52;
+        padding: 9px;
+        color: #fff;
+        border-radius: 15px 15px 0px 0px;
+
+    }
+
+    .yTable_2x6 tr>td {
+        line-height: 30px;
+        padding: 15px 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 459px) {
+    .yummy {
+        font-size: 20px;
+        line-height: 39px;
+    }
+
+    .yummy h2 {
+        font-size: 28px;
+
+    }
+
+    .yummy h3 {
+        margin: 50px 0px 0px;
+        font-size: 25px;
+
+    }
+
+    .readmore {
+        padding: 10px 20px;
+        line-height: 25px;
+        font-size: 16px;
+    }
+
+    .readmore button {
+        font-size: 12px;
+        padding: 5px 3px;
+    }
+
+    /* 2欄式表格樣式---開始*/
+    .yTable_2x6 {
+        line-height: 24px;
+    }
+
+    .yTable_2x6 tr>td {
+        font-size: 16px;
+        padding: 5px;
+
+    }
+
+
+    /* 選擇每一行的第一欄底下有白色點點作為分隔線 */
+    .yTable_2x6 tr>td:first-child {
+        border-bottom: 1px dotted #fff;
+    }
+
+    /* 最後一行的第一欄底部不需要分隔線 */
+    .yTable_2x6 tr:nth-last-child(1)>td:nth-child(1) {
+        border: none;
+    }
+
+
+
+    /* 2欄式表格樣式---結束 */
+    .star {
+        font-size: 20px;
+    }
+
+
+    .yTable_multi2 {
+        display: block;
+        font-size: 16px;
+        min-width: 800px;
+        line-height: 21px;
+
+    }
+
+    .yTable_multi2 tr>td {
+        padding: 12px 20px;
+    }
+
+
+    .moveRight {
+        max-width: 420px;
+        min-width: 300px;
+        overflow: auto;
+    }
+
+    /*多欄式表格 突出好事貸---開始*/
+    .yTable_multi {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .yTable_multi tr>td {
+        padding: 5px;
+
+    }
+
+    .yTable_pk {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 8px;
+    }
+
+    /*問答--開始*/
+    .QA {
+        padding-left: 0px;
+
+    }
+
+    .QA li {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .QA li:nth-child(1) {
+        font-weight: 600;
+
+    }
+
+    .QA li .none {
+        padding: 3px 20px 3px 8px;
+        margin-right: 0px;
+    }
+
+    /*問答--結束*/
+
+}
