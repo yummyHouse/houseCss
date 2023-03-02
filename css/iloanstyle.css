@@ -404,30 +404,52 @@ h1:not(.site-title):before, h2:before {
 
 /* 棋盤表格樣式---結束 */
 
-.Tips {
-
-    margin-top: 20px;
-    padding: 8px 25px 10px;
-    border: 1px solid #dda96a;
-    border-left: 10px solid #dda96a;
-
-}
-
-.Tips li:first-child {
-    margin-left: 50px;
-    list-style-image: url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
-    color: #aa6829;
-    font-weight: 500;
-    font-style: italic;
+/*小知識--20230301*/
+div.Tips{	
+	margin:20px 0px;
+	padding:8px 25px 10px;	
+	border:1px solid #dda96a;
+	border-left:10px solid #dda96a;
 
 }
-
-.Tips>li:nth-child(2) {
-    border-top: 1px solid #dda96a;
-    list-style: none;
-    padding-top: 20px;
-    color: #584444;
+div.Tips hx{
+	margin-left:10px;	
+	color:#aa6829;
+	font-weight:500;
+	font-style: italic;		
 }
+div.Tips hx:before{
+content:url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
+}
+div.Tips p{
+	border-top:1px solid #dda96a;
+	list-style:none;
+	padding-top:20px;
+	color:#584444;
+} 
+/*小知識--之後會刪掉*/
+ul.Tips{	
+	margin-top:20px;
+	padding:8px 25px 10px;	
+	border:1px solid #dda96a;
+	border-left:10px solid #dda96a;
+
+}
+ul.Tips li:first-child{
+	margin-left:50px;
+	list-style-image:url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
+	color:#aa6829;
+	font-weight:500;
+	font-style: italic;		
+}
+
+ul.Tips>li:nth-child(2){
+	border-top:1px solid #dda96a;
+	list-style:none;
+	padding-top:20px;
+	color:#584444;
+} 
+/*小知識--結束*/
 
 
 /*延伸閱讀樣式--開始*/
@@ -522,56 +544,87 @@ h1:not(.site-title):before, h2:before {
 /*延伸閱讀樣式--結束*/
 
 
+
+/*問答--20230301修改 */
+.QA2{	
+	margin:30px 0px 10px;
+}
+.QA2:nth-child(odd)>li:first-child{
+	background-color:#ef917e;	
+}
+
+.QA2 li{			
+	list-style:none;
+	padding: 0px 10px 10px;
+	margin-top:5px;		
+	background-color:#fff8ec;
+}
+.QA2 li:first-child{
+	color:#fff;
+	font-weight:600;
+	background-color:#dd5858;
+	box-shadow:0px 2px #dd5858;
+}
+.QA2 li:last-child{
+	color:#563838;
+	font-weight:500;
+	margin-top:-10px;
+	padding:8px;
+}
+.QA2 li>span{
+	color:red;
+	font-weight:700;
+	margin-right:10px;
+}
+.QA2 li a{
+	border-bottom:1px solid red;
+}
+span.none{
+	font-size:18px;
+  clip-path: polygon(0 0, 100% 0%, 75%     100%, 0% 100%);
+	margin-left:-10px;
+	padding:5px 20px 0px 15px;
+	background-color:#fff;
+	display:inline-block;	
+	color:#dd5858;
+	margin-right:10px;
+}
 /*問答--開始*/
-
-.QA:nth-child(odd)>li:nth-child(1) {
-    background-color: #ef917e;
-    box-shadow: 0px 2px #ef917e;
+.QA{	
+	margin:30px 0px 10px;
+}
+.QA:nth-child(odd)>li:first-child{
+	background-color:#ef917e;	
 }
 
-.QA li {
-    list-style: none;
-    padding: 0px 10px;
-    margin-top: 5px;
-    background-color: #fff8ec;
-
-
-
+.QA li{			
+	list-style:none;
+	padding: 0px 10px 10px;
+	margin-top:5px;		
+	background-color:#fff8ec;
 }
-
-.QA li:nth-child(1) {
-    color: #fff;
-    font-weight: 600;
-    background-color: #dd5858;
-    box-shadow: 0px 2px #dd5858;
+.QA li:first-child{
+	color:#fff;
+	font-weight:600;
+	background-color:#dd5858;
+	box-shadow:0px 2px #dd5858;
 }
-
-.QA li:last-child {
-    color: #563838;
-    font-weight: 500;
-    margin-top: -10px;
-    padding: 10px;
+.QA li:last-child{
+	color:#563838;
+	font-weight:500;
+	margin-top:-10px;
+	padding:8px;
 }
-
-.QA li>span {
-    color: red;
-    font-weight: 700;
-    margin-right: 10px;
+.QA li>span{
+	color:red;
+	font-weight:700;
+	margin-right:10px;
 }
-
-.QA li .none {
-    font-size: 18px;
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-    margin-left: -10px;
-    padding: 5px 30px 0px 20px;
-    background-color: #fff;
-    display: inline-block;
-    color: #dd5858;
-    margin-right: 20px;
-
+.QA li a{
+	border-bottom:1px solid red;
 }
-
 /*問答--結束*/
+
 
 
 /*不希望被抓進大綱的小列表--開始*/

@@ -659,9 +659,43 @@ input[type=radio] {
     background-color: #ffea84;
 }
 
-/* 小秘訣 */
-.Tips {
-    margin: 50px 0px 80px;
+
+
+
+/*小提示20230301---開始*/
+div.Tips {
+    padding: 10px 25px 25px;
+    border-right: 5px solid #b3d9e1;
+    border-left: 5px solid #b3d9e1;
+    background: #fff;
+    margin: 10px 0px 50px;
+}
+
+div.Tips hx {
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    color: #59abbd;
+    border-bottom: 2px dashed #b3d9e1;
+    font-size: 2.3rem;
+}
+
+div.Tips hx::before {
+    content: url('https://carmoto.com.tw/wp-content/uploads/2022/04/tipicon1.png');
+    margin-right: 10px;
+}
+
+div.Tips p {
+    padding-top: 15px;
+    color: #4c4c4c;
+    margin: 0;
+}
+
+
+/* 小提示--之後會刪掉 */
+ul.Tips {
+    margin: 10px 0px 50px;
     padding: 10px 25px 25px;
     list-style: none;
     background: #fff;
@@ -669,8 +703,8 @@ input[type=radio] {
     border-left: 5px solid #b3d9e1;
 }
 
-.Tips>li:first-child {
-    font-weight: 500;
+ul.Tips>li:first-child {
+    font-weight: 600;
     display: flex;
     justify-content: center;
     color: #59abbd;
@@ -679,21 +713,21 @@ input[type=radio] {
     border-bottom: 2px dashed #b3d9e1;
 }
 
-.Tips>li:first-child::before {
+ul.Tips>li:first-child::before {
     content: url('https://carmoto.com.tw/wp-content/uploads/2022/04/tipicon1.png');
     margin-right: 10px;
 
 }
 
-.Tips>li:nth-child(2) {
+ul.Tips>li:nth-child(2) {
     line-height: 3.8rem;
     list-style: none;
     padding-top: 20px;
     color: #4c4c4c;
+    font-weight: 400;
 }
 
-
-
+/* 小提示--結束 */
 
 
 /*延伸閱讀樣式--開始*/
@@ -735,56 +769,77 @@ input[type=radio] {
 /*延伸閱讀樣式--結束*/
 
 
+/*問答20230301--開始*/
+.QA2{
+	margin:40px 0px 40px -40px;		
+}
+span.none{	
+	font-weight:600;	
+	color:#293e7a;
+	background:#bde1e7;
+	padding:8px 12px;
+	margin-right:15px;
+	padding:10px;	
+}
+.QA2 li>hx{
+	padding-left:20px;
+	color:#293e7a;
+	display:block;
+	line-height:42px;
+	font-weight:600;
+	background-color:#bde1e7;
+}
+.QA2 li{		
+	list-style:none;	
+	background-color:#fff;	
+	padding-bottom:0px;
+	border-bottom:1px solid	#bde1e7;
+	margin-bottom:20px;
+}
+.QA2 li>p{
+	line-height:4rem;
+	padding-left:20px;
+	margin:10px;
+}
+.QA2 li mark{
+	font-weight:600;	
+}
+
+
 /*問答--開始*/
-.QA {
-    margin: 40px 0px 40px -40px;
-
+.QA{
+	margin:40px 0px 40px -40px;	
 }
-
-span.none {
-    font-weight: 600;
-    color: #293e7a;
-    margin-right: 15px;
+.QA li:nth-child(even) span.none{
+	color:#293e7a;
+	background:#bde1e7;
+	padding:8px 12px;
+	background-size: contain;	
+background-repeat: no-repeat;
 }
-
-.QA li:nth-child(2) span.none {
-    color: #293e7a;
-    background: #bde1e7;
-    padding: 8px 12px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.QA li:nth-child(odd) span{
+	padding:10px 5px 10px 12px;	
 }
-
-.QA li:nth-child(1) span {
-    padding: 10px 5px 10px 12px;
-
+.QA li{		
+	list-style:none;
+	padding:5px 20px;
+	background-color:#fff;	
 }
-
-.QA li {
-    list-style: none;
-    padding: 5px 20px;
-    background-color: #fff;
+.QA li:nth-child(odd){
+	color:#293e7a;
+	font-weight:600;
+	background-color:#bde1e7;
 }
-
-.QA li:nth-child(1) {
-    color: #293e7a;
-    font-weight: 600;
-    background-color: #bde1e7;
+.QA li:nth-child(even) {
+	font-weight:400;
+	color:#2d3460;
+	border-bottom:1px solid	#bde1e7;
+	padding:20px;
+	line-height:3.6rem;
 }
-
-.QA li:nth-child(2) {
-    font-weight: 400;
-    color: #2d3460;
-    border-bottom: 1px solid #bde1e7;
-    padding: 20px;
-    line-height: 3.6rem;
+.QA li mark{
+	font-weight:600;	
 }
-
-.QA li mark {
-    font-weight: 600;
-    color: #cd3984;
-}
-
 /*問答--結束*/
 
 /* 作者簡介 */
