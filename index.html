@@ -49,9 +49,9 @@
 
 
   <div id="wrap">
-
+    
     <p>總表</p>
-    <h3 style="color:rgb(216, 51, 22); text-align:center; margin-top: 50px;">2023.03.06 新增跳板區塊</h3>
+    <h5 style="color:rgb(216, 51, 22); margin: 50px auto 10px; width:300px; line-height:30px;">【2023.03.20】<br>1.修改介紹型表單架構 <br>2.新增優缺點、同列介紹型表單 <br> 3.看更多、立即試算按鈕</h5>
     <table class="yTable_2ver">
       <tr>
         <td>樣式名稱</td>
@@ -81,7 +81,7 @@
         <td>2-3.介紹型表單</td>
         <td style="display: flex;">
           <textarea class="content" name="介紹型表單">
-<ul class="introul"><li>第1項</li><li>第1項的敘述</li><li>第2項</li><li>第2項的敘述</li><li>第3項</li><li>第3項的敘述</li></ul>
+<ul class="introul2"><li><h4>第1項</h4>第1項的敘述</li><li><h4>第2項</h4>第2項的敘述</li></ul>     
           
         </textarea>
           <button class="copyBtn">複製</button>
@@ -89,13 +89,10 @@
       </tr>
 
       <tr>
-        <td>2-4.缺點(目前只有123貸有喔)</td>
+        <td>2-4.介紹型表單(同列)</td>
         <td style="display: flex;">
-          <textarea class="content" name="缺點">
-<ul class="down"><li>第1項</li><li>第2項</li><li>第3項</li></ul>
-            
-            <!-- 與介紹型表單並用的狀況 -->
-<ul class="introul down"><li>第1項</li><li>第2項</li><li>第3項</li><li>第4項</li></ul>
+          <textarea class="content" name="介紹型表單(同列)">
+<ul class="introul2 noBR"><li><h4>介紹型表單(同列)第一項：</h4>第一項的內容說明</li><li><h4>介紹型表單(同列)第二項：</h4>第二項的內容說明</li></ul>    
           
         </textarea>
           <button class="copyBtn">複製</button>
@@ -103,7 +100,68 @@
       </tr>
 
       <tr>
-        <td>2-5.特殊標題(好事貸/123貸)</td>
+        <td>2-5-1.優點(單獨使用)</td>
+        <td style="display: flex;">
+          <textarea class="content" name="優點(單獨使用)">
+<ul class="up"><li>第1項</li><li>第2項</li><li>第3項</li></ul>          
+          </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2-5-2.缺點(單獨使用)</td>
+        <td style="display: flex;">
+          <textarea class="content" name="缺點(單獨使用)">
+<ul class="down"><li>第1項</li><li>第2項</li><li>第3項</li></ul> 
+         </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2-6-1.優點(搭配介紹型表單)</td>
+        <td style="display: flex;">
+          <textarea class="content" name="優點(搭配介紹型表單)">
+<ul class="introul2 up"><li><h4>優點1</h4>優點1的敘述</li><li><h4>優點2</h4>優點2的敘述</li></ul>           
+          </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2-6-2.缺點(搭配介紹型表單)</td>
+        <td style="display: flex;">
+          <textarea class="content" name="缺點(搭配介紹型表單)">
+<ul class="introul2 down"><li><h4>缺點1</h4>缺點1的敘述</li><li><h4>缺點2</h4>缺點2的敘述</li></ul>
+         </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2-7-1.優點(搭配介紹型表單(同列))</td>
+        <td style="display: flex;">
+          <textarea class="content" name="優點(搭配介紹型表單(同列))">
+<ul class="introul2 noBR up"><li><h4>優點1</h4>優點1的敘述</li><li><h4>優點2</h4>優點2的敘述</li></ul>           
+          </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2-7-2.缺點(搭配介紹型表單(同列))</td>
+        <td style="display: flex;">
+          <textarea class="content" name="缺點(搭配介紹型表單(同列))">
+<ul class="introul2 noBR down"><li><h4>缺點1</h4>缺點1的敘述</li><li><h4>缺點2</h4>缺點2的敘述</li></ul>
+         </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td>2-8.特殊標題</td>
         <td style="display: flex;">
           <textarea class="content" name="特殊標題">
 <p class=yPoint>你的標題文字</p>
@@ -112,6 +170,28 @@
           <button class="copyBtn">複製</button>
         </td>
       </tr>
+
+      <tr>
+        <td>2-9-1.看更多按鈕</td>
+        <td style="display: flex;">
+          <textarea class="content" name="看更多按鈕">
+<button class="snsLink">看更多</button>
+         </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2-9-2.立即試算按鈕</td>
+        <td style="display: flex;">
+          <textarea class="content" name="立即試算按鈕">
+<button class="calculator">立即試算</button> 
+         </textarea>
+          <button class="copyBtn">複製</button>
+        </td>
+      </tr>
+
+
 
       <tr class="title">
         <td>樣式名稱</td>
@@ -191,8 +271,7 @@
         <td>3-6.均分表格寬度(2~7個欄位)</td>
         <td style="display: flex;">
           <textarea class="content" name="均分表格寬度">
-<!-- 舉例:橫欄表格 + 均分六欄 -->
-<table class="yTable_2x6 average6"></table>
+<!-- 舉例:橫欄表格 + 均分六欄 --><table class="yTable_2x6 average6"></table>
           
         </textarea>
           <button class="copyBtn">複製</button>

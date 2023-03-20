@@ -2,6 +2,9 @@
 p::selection, h2::selection, h3::selection, a::selection, span::selection, mark::selection, strong::selection, img::selection, ul>li::selection {
 	background: #d1ecf7;
 }
+button{
+	border:none;
+}
 
 /*下面是yummy的樣式表*/
 
@@ -23,11 +26,11 @@ p::selection, h2::selection, h3::selection, a::selection, span::selection, mark:
 	height: 100%;
 }
 
+/* ==============介紹型表單(舊版，之後會移除)=========== */
 .introul>li:nth-child(odd) {
 	font-weight: 600;
 	margin-top: 30px;
 	font-size: 20px;
-
 }
 
 .introul>li:nth-child(even) {
@@ -35,6 +38,61 @@ p::selection, h2::selection, h3::selection, a::selection, span::selection, mark:
 	font-weight: 400;
 	color: black;
 }
+/* ==============介紹型表單Ver.2開始=========== */
+.introul2>li{
+	list-style:none;
+	color:#000 !important;
+	font-weight:400 !important;
+}
+.introul2>li h4{	
+	color:#3561b9;
+	margin-top:40px;
+	margin-bottom:10px;	
+	font-size: 20px;
+}
+.introul2>li h4::before{
+	content:'▪';
+	margin-right:10px;
+}
+.introul2>li p{		
+	color:#000;
+	line-height:32px;
+	font-size:18px;
+	font-weight:400;
+}
+.introul2.noBR>li h4{	
+	display: inline-block;
+	margin-right: 10px;	
+}
+.introul2.noBR li>p{
+	display:inline;
+}
+
+/* ==============表單與介紹型表單Ver.2優缺點============== */
+
+.yummy ul.up>li{
+	color: #31994c;
+	list-style: none;
+}
+.yummy ul.up>li::before, .yummy ul.up>li h4::before{
+	content:'✔';
+	color: #31994c;	
+}
+
+.yummy ul.down>li{
+	color: #ab4545;
+	list-style: none;
+}
+.yummy ul.down>li::before, .yummy ul.down>li h4::before {
+	content:'✘';
+	color: #ab4545;	
+}
+.yummy ul.introul2.down>li::before,.yummy ul.introul2.up>li::before{
+	content: '';	
+}
+
+/* ==============介紹型表單Ver.2結束============== */
+
 
 .stressinLi {
 	background-color: #ebffee;
@@ -50,9 +108,50 @@ p::selection, h2::selection, h3::selection, a::selection, span::selection, mark:
 	line-height: 2em;
 	font-weight: 500;
 	font-family: 'Noto Sans TC', sans-serif;
-
-
 }
+
+	/* 社群連結開始 */
+	.yummy .snsLink:hover{
+		background:#c23038;
+		box-shadow: none;		
+		transform:scale(0.98);
+	}
+	.yummy .snsLink{
+		letter-spacing:1px;
+		margin:20px auto 30px;
+		display:block;
+		background-color:#c56065;
+		padding: 0px 30px;
+		line-height:50px;		
+		color:#fff;
+		text-align:center;
+		border-radius:10px;	
+		font-weight:bolder;	
+	  	box-shadow: 0px 2px #493335;
+	  	
+	}
+	/* 社群連結結束 */
+	
+	/* 試算按鈕開始 */
+	.yummy .calculator:hover{
+		background-color:#2fa587;
+		box-shadow: none;
+		transform:scale(0.98);
+	}
+	.yummy .calculator{
+		letter-spacing:1px;
+		margin:20px auto 30px;
+		display:block;
+		background-color:#67cbb2;
+		padding: 0px 30px;
+		line-height:50px;		
+		color:#fff;
+		text-align:center;
+		border-radius:10px;	
+		font-weight:bolder;	
+	  box-shadow: 0px 2px #21929b;
+	}
+	/* 試算按鈕結束 */
 
 .yummy h2 {
 	margin: 80px 0px 50px;
@@ -83,17 +182,9 @@ p::selection, h2::selection, h3::selection, a::selection, span::selection, mark:
 	font-weight: 600;
 }
 
-.yummy ul.down {
-	list-style-image: url('https://123loan.tw/wp-content/uploads/2022/01/li3.png');
-}
 
-.yummy ul.down>li {
-	color: #ab4545;
-}
 
-.yummy ul.introul.down>li:nth-child(even) {
-	color: #000;
-}
+
 
 .yummy ol {
 	color: #4754b1;
