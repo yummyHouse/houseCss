@@ -183,9 +183,6 @@ button{
 }
 
 
-
-
-
 .yummy ol {
 	color: #4754b1;
 	list-style-position: inside;
@@ -210,21 +207,24 @@ button{
 	background-color: #fff8e5;
 }
 
-.allOK {
-	display: block;
-	line-height: 38px;
-	clip-path: polygon(95% 0, 100% 16%, 100% 98%, 0 100%, 0 0);
-	padding: 50px;
-	text-align: center;
-	background-color: #f8fbff;
-	border-left: 4px solid #6f93df;
-	font-weight: 400;
-	font-size: 21px;
-	color: #656587;	
-	box-shadow: 10px 10px #acd4e3;
-	margin-bottom: 50px;
+.allOK{		
+	line-height:28px;		
+	padding:20px 30px;		
+	background-color:#f6fafc;
+	border-left:4px solid #6f93df;	
+	font-weight:400;	
+	color:#333;	
+	font-size: 15.5px;
+	text-align: center;	
+	margin:20px 20px 50px;
 }
-
+.allOK h4{
+   font-size: 17px;
+   color:#404080;	
+   background-color: #e1f2f7;
+   border-radius: 25px;
+   padding: 10px 20px;  
+}
 
 
 /* 縱狀表格*/
@@ -308,46 +308,144 @@ button{
 	letter-spacing: 0.1em;
 }
 
-
-/*細節項目---開始*/
-.sTitle {
-	display: block;
-	text-align: center;
-	padding: 10px 20px;
-
-
+/* =================== 2022_0711計算區塊開始 ===================*/
+.calcu_block{		
+	padding:15px 40px 20px;
+	background:#fffcee;
+	border-left:10px solid #fff2b6;	
+	position:relative;	
+}
+.calcu_block::after{
+content:url('https://houseloan.tw/wp-content/uploads/2022/07/calculator_icon.png');
+	position:absolute;
+	transform:rotate(20deg);
+	right:10px;
+	opacity:.5;
+	zoom:.7;
+}
+.calcu_block>.cal_title{
+	font-size:1.3rem;
+	letter-spacing:.1em;
+	color:#7b6019;
+	margin-bottom:10px;
+	border-bottom:1px solid #cba63e;
+	font-weight:500;
+	display:block;	
+}
+.calcu_block>.cal_title::before{
+	content:'Calculation';
+	opacity:.2;
+	font-size:2rem;
+	position:absolute;
+	top:5px;
+	right:10px;
+}
+@media screen and (max-width:767px) {	
+	
+	.calcu_block{		
+		padding:15px 20px 30px;
+	}
+	.calcu_block::after{	
+		opacity:.5;
+		zoom:.6;
+		right:20px;
+		bottom:-20px;
+	}
+	.calcu_block>.cal_title{
+		font-size:1.2rem;
+	}
+	.calcu_block>.cal_title::before{		
+		font-size:1.3rem;	
+		transform:rotate(90deg);
+		display:block;
+		top:55px;
+		right:-65px;
+	}
+	
 }
 
-.sTitle .item {
-	display: flex;
-	background: #fff;
-	justify-content: center;
-	border-radius: 15px;
+/* =================== 2022_0711計算區塊結束 ===================*/
+
+/* ============= 收合式分類項目 ============ */
+.sTitle{
+	display:block;
+	text-align:center;
+	padding:10px 20px;	
+	
 
 }
-
-.sTitle .item>span {
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	width: 200px;
-	height: 120px;
-	text-align: center;
-	margin: 20px;
-	border: 1px solid green;
-	color: green;
-	font-size: 21px;
-	letter-spacing: 0.03em;
-	border-radius: 15px;
+.sTitle .item{
+	display:flex;
+	background:#fff;
+	justify-content:center;	
+	border-radius:0px 0px 15px 15px;		
 }
 
-.sTitle summary {
-	padding: 15px;
-	background: #009941;
-	color: #fff;
+.sTitle .item>span{
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	flex-grow: 1;
+	height:80px;
+	text-align:center;
+	margin:20px;
+	border:1px solid green;
+	color:green;
+	font-size:21px;
+	letter-spacing:0.03em;
+	border-radius:15px;
+}
+.sTitle summary{	
+	padding:15px;
+	background:#009941;
+	color:#fff;
 }
 
-/*細節項目---結束*/
+/* ============= 收合式分類項目2 ============ */
+.sTitle2{
+	display:block;
+	text-align:center;
+	padding:10px 20px;	
+	
+
+}
+.sTitle2 .item{
+	display:flex;
+	background:#fff;
+	justify-content:center;
+	border-radius:0px 0px 15px 15px;
+		
+}
+.sTitle2 .item>div{
+	align-items:center;
+	justify-content:space-around;
+	display:flex;
+	flex-direction: column;	
+	flex-grow: 1;	
+	text-align:center;
+	padding: 10px;
+	margin:20px 10px;
+	border:1px solid green;
+	color:#333;
+	font-size:18px;	
+	font-weight: 400;
+	letter-spacing:0.03em;
+	border-radius:15px;
+}
+.sTitle2 .item>div>h4{
+	color:#31994c;	
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.sTitle2 summary{	
+	padding:15px;
+	background:#009941;
+	color:#fff;
+}
+
+/* ============= 收合式分類項目 ============ */	
 
 /* 棋盤表格樣式---開始 */
 .yTable_chessboard {
@@ -1035,11 +1133,7 @@ span.none {
 		font-weight: 600;
 	}
 
-	.allOK {
-		padding: 30px;
-		font-size: 20px;
-
-	}
+	
 
 }
 
@@ -1204,8 +1298,5 @@ span.none {
 	}
 
 	/*問答--結束*/
-	.allOK {
-		padding: 22px;
-		font-size: 19px;
-	}
+	
 }

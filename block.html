@@ -146,12 +146,16 @@
     <!-- 第4項 -->
     <div class="group mx-auto">
       <div class="yummy" style="padding:20px; ">
-        <p>4-4.萬用區塊</p>
+        <p>4-4.萬用區塊<span style="color: red;">(2023/3/21變更)</span></p>
 
-        <p class="allOK">
-          還有其他問題想問？<br>
+        <div class="allOK">
+          <h4>還有其他問題想問？</h4>
           您可以直接洽詢好事貸，<br>專業的房貸業務團隊會為您作詳細的說明。
-        </p>
+        </div>
+        <p>如果不要小標題請把h4標籤拿掉</p>
+        <div class="allOK">          
+          您可以直接洽詢好事貸，<br>專業的房貸業務團隊會為您作詳細的說明。
+        </div>
 
 
       </div>
@@ -159,7 +163,7 @@
 
 
       <div class="introBox">
-        <p class="intro">當你只有一段話想強調，單純增加文章的變化性，請使用他</p>
+        <p class="intro">原本是一段話適用，現在有小標題的部分，但若不想使用可以拿掉</p>
         <p class="intro">Step1. 複製下面的內容，貼到html修改頁中<br>
           Step2. 把內容填入
         </p>
@@ -168,10 +172,13 @@
 
       <div class="copyArea">
 
-        <textarea class="content" name="萬用區塊" style="height: 80px;">
-<p class="allOK">文字內容</p>
+        <textarea class="content" name="萬用區塊">
+<div class="allOK">  
+  <h4>這是小標題，如果不要請把h4標籤拿掉</h4>
+  內容
+</div>
             </textarea>
-        <button class="copyBtn" style="height: 80px;">複製</button>
+        <button class="copyBtn">複製</button>
 
 
       </div>
@@ -227,22 +234,14 @@
     <!-- 第6項 -->
     <div class="group mx-auto">
       <div class="yummy" style="padding:20px; ">
-        <p>4-6.細節</p>
-        <details class="sTitle" open>
-          <summary>房屋增貸對保需準備資料</summary>
-          <div class="item">
-            <span>雙證件</span>
-            <span>撥款存摺印鑑章</span>
-            <span>權狀正本</span>
-          </div>
-        </details>
-
+        <p>4-6.展開細節</p>
+        <details class="sTitle" open><summary>標題</summary><div class="item"><span>資料1</span><span>資料2</span><span>資料3</span></div></details> 
       </div>
 
 
 
       <div class="introBox">
-        <p class="intro">一個標題底下有幾個項目，點擊標題可開啟關閉（預設為開啟狀態）</p>
+        <p class="intro">一個標題底下有幾個項目，點擊標題可開啟關閉（預設為開啟狀態）<span style="color: red;">*這東西寬度不固定，內容物數量再多也不換排，再細項標籤要重編，請看下方sTitle2</span></p>
         <p class="intro">Step1. 複製下面的內容，貼到html修改頁中<br>
           Step2. 把標題及資料填入
         </p>
@@ -251,7 +250,7 @@
 
       <div class="copyArea">
 
-        <textarea class="content" name="細節" >
+        <textarea class="content" name="展開細節" >
 <details class="sTitle" open><summary>標題</summary><div class="item"><span>資料1</span><span>資料2</span><span>資料3</span></div></details> 
             </textarea>
         <button class="copyBtn" >複製</button>
@@ -263,8 +262,48 @@
 
      <!-- 第7項 -->
      <div class="group mx-auto">
+      <div class="yummy" style="padding:20px; ">
+        <p>4-7.展開分類項目</p>
+        <details class="sTitle2" open>
+          <summary>標題</summary>
+          <div class="item">
+            <div><h4>資料1</h4>1類細項1<br>2類細項2<br>3類細項3</div>
+            <div><h4>資料2</h4>1類細項1<br>2類細項2<br>3類細項3</div>
+            <div><h4>資料3</h4>1類細項1<br>2類細項2<br>3類細項3</div>
+          </div>
+        </details> 
+      </div>
+
+      <div class="introBox">
+        <p class="intro">sTitle2是類別內，仍有其他敘述的前提下去使用的</span></p>
+        <p class="intro">Step1. 複製下面的內容，貼到html修改頁中<br>
+          Step2. 把標題及資料填入
+        </p>
+      </div>
+
+
+      <div class="copyArea">
+
+        <textarea class="content" name="展開分類項目" style="height: 220px;" >
+<details class="sTitle2" open><summary>標題</summary>
+  <div class="item">
+    <div><h4>資料1</h4>細項內容1</div>
+    <div><h4>資料2</h4>細項內容2</div>
+    <div><h4>資料3</h4>細項內容3</div>
+  </div>
+</details> 
+            </textarea>
+        <button class="copyBtn"  style="height: 220px;" >複製</button>
+
+
+      </div>
+
+    </div>
+
+     <!-- 第8項 -->
+     <div class="group mx-auto">
       <div class="yummy" style="padding:20px 0px;">
-        <p>4-7.跳板區塊</p>
+        <p>4-8.跳板區塊</p>
         <div class="jumpBoard">
           <div class="description"><p class="des_title">想先了解利率、額度、期數是多少嗎?</p>我們會針對您的狀況給予專業建議以及最適合您的方案。</div >
           <a class="jumpBtn" href="跳轉網址">立即前往</a>
@@ -296,10 +335,43 @@
 
     </div>
 
-    <!-- 第8項 -->
+    <!-- 第9項 -->
     <div class="group mx-auto">
       <div class="yummy" style="padding:20px 0px;">
-        <p>4-8.漂浮氣球</p>
+        <p>4-9.試算區塊</p>
+        <p class="calcu_block">
+          <span class="cal_title" >實際試算</span>
+          計算內容計算內容計算內容計算內容計算內容計算內容計算內容計算內容計算內容計算內容計算內容計算內容計算內容計算內容
+        </p>
+      </div>
+
+
+
+      <div class="introBox">
+        <p class="intro">放計算內容的區塊</p>
+        <p class="intro">Step1. 複製下面的內容，貼到html修改頁中<br>
+          Step2. 把計算內容填入
+        </p>
+      </div>
+
+
+      <div class="copyArea">
+
+        <textarea class="content" name="試算區塊" >
+<p class="calcu_block"><span class="cal_title" >實際試算</span>計算內容</p>  
+              
+        </textarea>
+        <button class="copyBtn" >複製</button>
+
+
+      </div>
+
+    </div>
+    
+    <!-- 第10項 -->
+    <div class="group mx-auto">
+      <div class="yummy" style="padding:20px 0px;">
+        <p>4-10.漂浮氣球</p>
         <div class="balloonBox floating">
           <span class="balloon ">「案子很搶手，賣到剩個位數，要買要快！」</span>
           <span class="balloon flip">「現在賣五成了，下周要加價，想買要快！」</span>
