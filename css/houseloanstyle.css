@@ -63,6 +63,8 @@ button{
 .introul2.noBR>li h4{	
 	display: inline-block;
 	margin-right: 10px;	
+	margin-bottom:0px;
+	line-height: 32px;
 }
 .introul2.noBR li>p{
 	display:inline;
