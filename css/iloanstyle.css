@@ -1,3 +1,83 @@
+
+/* =======================
+       首頁的tabs開始 
+ ======================= */
+.featureBtn{
+    mix-blend-mode: luminosity;
+    opacity: .8;
+}
+
+.featureBtn.active{
+	  mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.featureBtn .elementor-image-box-wrapper{
+	display:flex;	
+}
+.elementor-image-box-img{
+	align-self:center;
+}
+
+.featureImg{
+	display:none;
+}
+
+.featureImg.active{
+	display:block;
+}
+
+/* =======================
+      首頁的tabs結束 
+ ======================= */
+
+
+/* =======================
+      首頁的文字樣式開始 
+ ======================= */
+.newTitleH2{
+	font-size:80px; 
+	color:#E89899; 
+	font-weight:900;	
+}
+.indexAmount{
+    font-size: 48px;
+    font-weight: 600;
+}
+.indexSmall{
+    font-size: 20px;
+}
+
+/* =======================
+      首頁的文字樣式結束 
+ ======================= */
+@media screen and (max-width:1024px){
+	.newTitleH2{
+		font-size:52px;
+	}
+	.indexAmount{
+    font-size: 28px;    
+	}
+	.indexSmall{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:480px){
+	.newTitleH2{
+		font-size:42px;
+	}
+	.indexAmount{
+    font-size: 22px;    
+	}
+	.indexSmall{
+    font-size: 14px;
+}
+}
+
+
+/* =======================
+          螢光筆開始
+========================== */
 mark {
     transition: color 300ms ease-out;
     background: linear-gradient(to top, rgba(255, 235, 70, 0.6) 1em, transparent 1em);
@@ -17,43 +97,43 @@ mark-blue {
     transition: color .300ms ease-out;
     background: linear-gradient(to top, rgba(130, 200, 210, 0.5), 1em, transparent 1em);
 }
+/* =======================
+          螢光筆結束
+========================== */
 
-h1:not(.site-title):before, h2:before {
-    /* 	width:40%;
-        background-color:#f5d4b8;*/
-    margin: 20px 0px;
-    background-color: #fff;
+/* ==========================
+      調整文章上方目錄開始
+========================== */
+.lwptoc_i {
+    line-height: 24px;
+    background: #63BCCC10 !important;
+    border-top: 1px solid #6C8CBF;
+    border-bottom: 1px solid #6C8CBF;
+    color: #705F93;
 }
 
-.yummy {
-    margin: 80px 0px 80px 10px;
-    font-size: 1.8rem;
-    line-height: 3rem;
-    font-weight: 500;
-    color: #000;
-    font-family: 'Noto Sans TC', sans-serif;
-    /*段落margin: 1.5rem 0px;*/
-}
-
-.yummy p {
-    line-height: 3.2rem;
+.lwptoc_i a {
+    color: #4B647E !important;
 }
 
 .yummy h2 {
-    margin: 50px 0px 20px;
-    color: #e3803a;
-    font-size: 36.5px;
-    font-weight: 800;
+    margin: 50px 0px 10px;
+    color: #51A2B3;
+    font-size: 34px;
+    letter-spacing: 1px;
 }
 
 .yummy h3 {
-    font-size: 29px;
-    color: #a14418;
+    margin-bottom: 5px;
+    font-size: 26px;
+    color: #2A7281;
+    letter-spacing: 0.8px;
 }
 
 .yummy h4 {
-    font-size: 2.6rem;
-    color: #89541f;
+    font-size: 23px;
+    color: #505050;
+    letter-spacing: 1px;
 }
 
 .yummy p>a {
@@ -85,20 +165,21 @@ h1:not(.site-title):before, h2:before {
 .yummy p>a:hover::after {
     opacity: 0%;
 }
+/* ==========================
+      調整文章上方目錄結束
+========================== */
+
 
 .yummy ul {
     margin: 30px 5px 60px 5px;
-
-    /* 想要放圖片 */
-    list-style: url("https://0800213886.com.tw/wp-content/uploads/2021/12/listStyle-e1638866091318.png");
-
 }
 
 .yummy ul>li {
-    line-height: 2.8rem;
     font-weight: 600;
-    color: #e46247;
-    margin: 12px 30px;
+    color: #EE9B6B;
+    font-size: 19px;
+    line-height: 38px;
+    letter-spacing: 1px;
 }
 
 .yummy ol {
@@ -106,35 +187,116 @@ h1:not(.site-title):before, h2:before {
 }
 
 .yummy ol>li {
-    line-height: 2.8rem;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 0px;
 }
 
 .yummy ol>li:before {
     position: absolute;
     mix-blend-mode: multiply;
-    margin: -25px -5px;
+    margin: -27px -7px;
     content: '';
     display: block;
     width: 25px;
     height: 25px;
     border-radius: 10px;
-    background: #ffe0a6;
+    background: #ffe5b6;
 }
 
-.yummy table li {
-    list-style: none;
-}
-
-.yummy .introul>li:nth-child(odd) {
+.introul>li:nth-child(odd) {
     margin-top: 40px;
+    margin-bottom: 10px;
+    color: #EE9B6B;
 }
 
-.yummy .introul>li:nth-child(even) {
-    list-style: none;
+.introul>li:nth-child(even) {
+    color: #000;
+    line-height: 32px;
+    font-size: 18px;
     font-weight: 400;
-    color: black;
+    list-style: none;
 }
+
+.introul2>li h4 {
+    font-size: 19px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #EE9B6B;
+}
+
+.introul2>li p {
+    color: #000;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.introul2.noBR>li h4 {
+    display: inline-block;
+    margin: 0px;
+    line-height: 32px;
+}
+
+.introul2.noBR li>p {
+    display: inline;
+}
+
+.yummy ul.up li h4::before{
+    content: '○';   
+    color: green; 
+}
+
+/* ==============
+表單與介紹型表單Ver.2優缺點
+============== */
+
+.yummy ul.up>li{
+	color: #3f8888;
+	list-style: none;
+}
+.yummy ul.up>li::before, .yummy ul.up>li h4::before{
+	content:'○';
+	color: #3f8888;	
+}
+
+.yummy ul.down>li{
+	color: #b65629;
+	list-style: none;
+}
+.yummy ul.down>li::before, .yummy ul.down>li h4::before {
+	content:'✘';
+	color: #b65629;	
+}
+.yummy ul.introul2.down>li::before,.yummy ul.introul2.up>li::before{
+	content: '';	
+}
+/* ==============
+ 介紹型表單Ver.2結束
+============== */
+
+/*==================
+    均分表格開始
+==================*/
+.average2 td{
+	width:50%;
+}
+.average3 td{
+	width:calc(100%/3);
+}
+.average4 td{
+	width:25%;
+}
+.average5 td{
+	width:20%;
+}
+.average6 td{
+	width:calc(100%/6);
+}
+.average7 td{
+	width:calc(100%/7);
+}
+/*==================
+    均分表格結束
+==================*/
 
 
 .noshow_h2 {
@@ -210,54 +372,56 @@ h1:not(.site-title):before, h2:before {
 }
 
 
-/* 2欄式表格樣式---開始*/
-.yTable_2x6 {
-    border-collapse: collapse;
-    letter-spacing: 0.1em;
-    border: 1px solid #dd6f61;
-    border-left: 8px solid #dd6f61;
-
-
+/*========================
+ 	 2欄式表格樣式---開始
+========================*/
+.yTable_2x6 {	
+border-collapse: collapse;
+letter-spacing:0.1em;
+border:1px solid #dd6f61;
+border-left:8px solid #dd6f61;           
 }
 
-.yTable_2x6 tr {
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+.yTable_2x6 tr{
+flex-wrap:nowrap;
+justify-content: center;
+align-items: center; 
 }
 
-.yTable_2x6 tr>td {
-    border: 1px solid #fdcaa9;
-    padding: 15px;
-    background-color: #e9ccbf;
-    text-align: center;
-    color: black;
-    font-weight: 600;
+.yTable_2x6 tr>td{
+border:1px solid #fdcaa9;
+padding: 15px;
+background-color:#e9ccbf;
+text-align: center;
+color: black;
+font-weight:600;
 }
 
 /* 選擇偶數行的第二欄為底色白色 */
-.yTable_2x6 tr:nth-child(even)>td:not(:first-child) {
-    background-color: #fff;
-    font-weight: 500;
-    color: rgb(22, 39, 39);
+.yTable_2x6 tr:nth-child(even)>td:not(:first-child){
+background-color:#fff;
+font-weight:500;
+color: rgb(22, 39, 39);
 }
 
 /* 選擇奇數行的第二欄為底色淺黃 */
-.yTable_2x6 tr:nth-child(odd)>td:not(:first-child) {
-    font-weight: 500;
-    background-color: #f9f6ee;
-    color: rgb(22, 39, 39);
+.yTable_2x6 tr:nth-child(odd)>td:not(:first-child){
+font-weight:500;
+background-color:#f9f6ee;
+color: rgb(22, 39, 39);
 }
 
 
 /* 選擇每一行的第一欄*/
-.yTable_2x6 tr>td:first-child {
-    border-bottom: 2px dashed #fff !important;
-    color: #874532;
-    width: 30%;
+.yTable_2x6 tr>td:first-child{
+  border-bottom: 2px dashed  #fff !important;
+	color:#874532;
+	width: 30%;
 }
+/*========================
+ 	 2欄式表格樣式---結束
+========================*/
 
-/* 2欄式表格樣式---結束 */
 
 
 /*多欄式表格 突出好事貸---開始*/
@@ -405,50 +569,56 @@ h1:not(.site-title):before, h2:before {
 /* 棋盤表格樣式---結束 */
 
 /*小知識--20230301*/
-div.Tips{	
-	margin:20px 0px;
-	padding:8px 25px 10px;	
-	border:1px solid #dda96a;
-	border-left:10px solid #dda96a;
+div.Tips {
+    margin: 20px 0px;
+    padding: 8px 25px 10px;
+    border: 1px solid #dda96a;
+    border-left: 10px solid #dda96a;
 
 }
-div.Tips hx{
-	margin-left:10px;	
-	color:#aa6829;
-	font-weight:500;
-	font-style: italic;		
+
+div.Tips hx {
+    margin-left: 10px;
+    color: #aa6829;
+    font-weight: 500;
+    font-style: italic;
 }
-div.Tips hx:before{
-content:url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
+
+div.Tips hx:before {
+    content: url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
 }
-div.Tips p{
-	border-top:1px solid #dda96a;
-	list-style:none;
-	padding-top:20px;
-	color:#584444;
-} 
+
+div.Tips p {
+    border-top: 1px solid #dda96a;
+    list-style: none;
+    padding-top: 20px;
+    color: #584444;
+}
+
 /*小知識--之後會刪掉*/
-ul.Tips{	
-	margin-top:20px;
-	padding:8px 25px 10px;	
-	border:1px solid #dda96a;
-	border-left:10px solid #dda96a;
+ul.Tips {
+    margin-top: 20px;
+    padding: 8px 25px 10px;
+    border: 1px solid #dda96a;
+    border-left: 10px solid #dda96a;
 
 }
-ul.Tips li:first-child{
-	margin-left:50px;
-	list-style-image:url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
-	color:#aa6829;
-	font-weight:500;
-	font-style: italic;		
+
+ul.Tips li:first-child {
+    margin-left: 50px;
+    list-style-image: url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
+    color: #aa6829;
+    font-weight: 500;
+    font-style: italic;
 }
 
-ul.Tips>li:nth-child(2){
-	border-top:1px solid #dda96a;
-	list-style:none;
-	padding-top:20px;
-	color:#584444;
-} 
+ul.Tips>li:nth-child(2) {
+    border-top: 1px solid #dda96a;
+    list-style: none;
+    padding-top: 20px;
+    color: #584444;
+}
+
 /*小知識--結束*/
 
 
@@ -546,83 +716,96 @@ ul.Tips>li:nth-child(2){
 
 
 /*問答--20230301修改 */
-.QA2{	
-	margin:30px 0px 10px;
-}
-.QA2:nth-child(odd)>li:first-child{
-	background-color:#ef917e;	
+.QA2 {
+    margin: 30px 0px 10px;
 }
 
-.QA2 li{			
-	list-style:none;
-	padding: 0px 10px 10px;
-	margin-top:5px;		
-	background-color:#fff8ec;
+.QA2:nth-child(odd)>li:first-child {
+    background-color: #ef917e;
 }
-.QA2 li:first-child{
-	color:#fff;
-	font-weight:600;
-	background-color:#dd5858;
-	box-shadow:0px 2px #dd5858;
+
+.QA2 li {
+    list-style: none;
+    padding: 0px 10px 10px;
+    margin-top: 5px;
+    background-color: #fff8ec;
 }
-.QA2 li:last-child{
-	color:#563838;
-	font-weight:500;
-	margin-top:-10px;
-	padding:8px;
+
+.QA2 li:first-child {
+    color: #fff;
+    font-weight: 600;
+    background-color: #dd5858;
+    box-shadow: 0px 2px #dd5858;
 }
-.QA2 li>span{
-	color:red;
-	font-weight:700;
-	margin-right:10px;
+
+.QA2 li:last-child {
+    color: #563838;
+    font-weight: 500;
+    margin-top: -10px;
+    padding: 8px;
 }
-.QA2 li a{
-	border-bottom:1px solid red;
+
+.QA2 li>span {
+    color: red;
+    font-weight: 700;
+    margin-right: 10px;
 }
-span.none{
-	font-size:18px;
-  clip-path: polygon(0 0, 100% 0%, 75%     100%, 0% 100%);
-	margin-left:-10px;
-	padding:5px 20px 0px 15px;
-	background-color:#fff;
-	display:inline-block;	
-	color:#dd5858;
-	margin-right:10px;
+
+.QA2 li a {
+    border-bottom: 1px solid red;
 }
+
+span.none {
+    font-size: 18px;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    margin-left: -10px;
+    padding: 5px 20px 0px 15px;
+    background-color: #fff;
+    display: inline-block;
+    color: #dd5858;
+    margin-right: 10px;
+}
+
 /*問答--開始*/
-.QA{	
-	margin:30px 0px 10px;
-}
-.QA:nth-child(odd)>li:first-child{
-	background-color:#ef917e;	
+.QA {
+    margin: 30px 0px 10px;
 }
 
-.QA li{			
-	list-style:none;
-	padding: 0px 10px 10px;
-	margin-top:5px;		
-	background-color:#fff8ec;
+.QA:nth-child(odd)>li:first-child {
+    background-color: #ef917e;
 }
-.QA li:first-child{
-	color:#fff;
-	font-weight:600;
-	background-color:#dd5858;
-	box-shadow:0px 2px #dd5858;
+
+.QA li {
+    list-style: none;
+    padding: 0px 10px 10px;
+    margin-top: 5px;
+    background-color: #fff8ec;
 }
-.QA li:last-child{
-	color:#563838;
-	font-weight:500;
-	margin-top:-10px;
-	padding:8px;
+
+.QA li:first-child {
+    color: #fff;
+    font-weight: 600;
+    background-color: #dd5858;
+    box-shadow: 0px 2px #dd5858;
 }
-.QA li>span{
-	color:red;
-	font-weight:700;
-	margin-right:10px;
+
+.QA li:last-child {
+    color: #563838;
+    font-weight: 500;
+    margin-top: -10px;
+    padding: 8px;
 }
-.QA li a{
-	border-bottom:1px solid red;
+
+.QA li>span {
+    color: red;
+    font-weight: 700;
+    margin-right: 10px;
 }
+
+.QA li a {
+    border-bottom: 1px solid red;
+}
+
 /*問答--結束*/
 
 
