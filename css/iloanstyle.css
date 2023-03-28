@@ -1,83 +1,87 @@
-
-/* =======================
-       首頁的tabs開始 
- ======================= */
-.featureBtn{
+/*================
+ 	首頁的tabs開始
+================*/
+.featureBtn {
     mix-blend-mode: luminosity;
     opacity: .8;
 }
 
-.featureBtn.active{
-	  mix-blend-mode: normal;
+.featureBtn.active {
+    mix-blend-mode: normal;
     opacity: 1;
 }
 
-.featureBtn .elementor-image-box-wrapper{
-	display:flex;	
-}
-.elementor-image-box-img{
-	align-self:center;
+.featureBtn .elementor-image-box-wrapper {
+    display: flex;
 }
 
-.featureImg{
-	display:none;
+.elementor-image-box-img {
+    align-self: center;
 }
 
-.featureImg.active{
-	display:block;
+.featureImg {
+    display: none;
 }
 
-/* =======================
-      首頁的tabs結束 
- ======================= */
-
-
-/* =======================
-      首頁的文字樣式開始 
- ======================= */
-.newTitleH2{
-	font-size:80px; 
-	color:#E89899; 
-	font-weight:900;	
+.featureImg.active {
+    display: block;
 }
-.indexAmount{
+
+/*================
+ 	首頁的tabs結束
+================*/
+
+/*===================
+ 首頁的文字樣式開始 
+====================*/
+.newTitleH2 {
+    font-size: 80px;
+    color: #E89899;
+    font-weight: 900;
+}
+
+.indexAmount {
     font-size: 48px;
     font-weight: 600;
 }
-.indexSmall{
+
+.indexSmall {
     font-size: 20px;
 }
 
-/* =======================
-      首頁的文字樣式結束 
- ======================= */
-@media screen and (max-width:1024px){
-	.newTitleH2{
-		font-size:52px;
-	}
-	.indexAmount{
-    font-size: 28px;    
-	}
-	.indexSmall{
-    font-size: 18px;
-  }
-}
-@media screen and (max-width:480px){
-	.newTitleH2{
-		font-size:42px;
-	}
-	.indexAmount{
-    font-size: 22px;    
-	}
-	.indexSmall{
-    font-size: 14px;
-}
+
+@media screen and (max-width:1024px) {
+    .newTitleH2 {
+        font-size: 52px;
+    }
+
+    .indexAmount {
+        font-size: 28px;
+    }
+
+    .indexSmall {
+        font-size: 18px;
+    }
 }
 
+@media screen and (max-width:480px) {
+    .newTitleH2 {
+        font-size: 42px;
+    }
 
-/* =======================
-          螢光筆開始
-========================== */
+    .indexAmount {
+        font-size: 22px;
+    }
+
+    .indexSmall {
+        font-size: 14px;
+    }
+}
+
+/*================
+ 首頁的文字樣式--結束 
+================*/
+
 mark {
     transition: color 300ms ease-out;
     background: linear-gradient(to top, rgba(255, 235, 70, 0.6) 1em, transparent 1em);
@@ -97,13 +101,7 @@ mark-blue {
     transition: color .300ms ease-out;
     background: linear-gradient(to top, rgba(130, 200, 210, 0.5), 1em, transparent 1em);
 }
-/* =======================
-          螢光筆結束
-========================== */
 
-/* ==========================
-      調整文章上方目錄開始
-========================== */
 .lwptoc_i {
     line-height: 24px;
     background: #63BCCC10 !important;
@@ -136,26 +134,27 @@ mark-blue {
     letter-spacing: 1px;
 }
 
+.yummy a {
+    color: #08a1a1;
+    text-decoration: underline;
+}
+
+.yummy table {
+    margin: 10px 0px;
+}
+
+.yummy table p {
+    margin-bottom: 0;
+    line-height: 32px;
+}
+
 .yummy p>a {
     transition: 0.3s;
     display: inline-block;
     position: relative;
     font-weight: bold;
-
 }
 
-.yummy p>a::after {
-    transition: 0.3s;
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #cd2653;
-    height: 2px;
-    width: 100%;
-    margin-top: -5px;
-
-
-}
 
 .yummy p>a:hover {
     background-color: #ffe2d7;
@@ -165,10 +164,6 @@ mark-blue {
 .yummy p>a:hover::after {
     opacity: 0%;
 }
-/* ==========================
-      調整文章上方目錄結束
-========================== */
-
 
 .yummy ul {
     margin: 30px 5px 60px 5px;
@@ -176,7 +171,7 @@ mark-blue {
 
 .yummy ul>li {
     font-weight: 600;
-    color: #EE9B6B;
+    color: #428b87;
     font-size: 19px;
     line-height: 38px;
     letter-spacing: 1px;
@@ -216,16 +211,24 @@ mark-blue {
     list-style: none;
 }
 
+.introul2 {
+    margin: 0px !important;
+}
+
+ul.introul2 li {
+    line-height: 30px;
+    margin: 15px 0px;
+}
+
 .introul2>li h4 {
     font-size: 19px;
     margin-top: 40px;
     margin-bottom: 10px;
-    color: #EE9B6B;
+    color: #428b87;
 }
 
 .introul2>li p {
     color: #000;
-    line-height: 32px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -233,71 +236,105 @@ mark-blue {
 .introul2.noBR>li h4 {
     display: inline-block;
     margin: 0px;
-    line-height: 32px;
 }
 
 .introul2.noBR li>p {
     display: inline;
 }
 
-.yummy ul.up li h4::before{
-    content: '○';   
-    color: green; 
-}
-
 /* ==============
 表單與介紹型表單Ver.2優缺點
 ============== */
 
-.yummy ul.up>li{
-	color: #3f8888;
-	list-style: none;
-}
-.yummy ul.up>li::before, .yummy ul.up>li h4::before{
-	content:'○';
-	color: #3f8888;	
+.yummy ul.up>li,
+.yummy ul.up>li h4 {
+    color: #31994c;
+    list-style: none;
 }
 
-.yummy ul.down>li{
-	color: #b65629;
-	list-style: none;
+.yummy ul.up>li::before,
+.yummy ul.up>li h4::before {
+    content: 'ｏ';
+    margin-right: 5px;
+    color: #31994c;
 }
-.yummy ul.down>li::before, .yummy ul.down>li h4::before {
-	content:'✘';
-	color: #b65629;	
+
+.yummy ul.down>li,
+.yummy ul.down>li h4 {
+    color: #ab4545;
+    list-style: none;
 }
-.yummy ul.introul2.down>li::before,.yummy ul.introul2.up>li::before{
-	content: '';	
+
+.yummy ul.down>li::before,
+.yummy ul.down>li h4::before {
+    content: 'ｘ';
+    margin-right: 5px;
+    color: #ab4545;
 }
-/* ==============
+
+.yummy ul.introul2.down>li::before,
+.yummy ul.introul2.up>li::before {
+    content: none;
+}
+
+/*=================
  介紹型表單Ver.2結束
-============== */
+=================*/
 
-/*==================
-    均分表格開始
-==================*/
-.average2 td{
-	width:50%;
+/*=================
+    試算按鈕開始
+=================*/
+.yummy .calculator:hover{
+    background-color:#2fa587;
+    box-shadow: none;
+    transform:scale(0.98);
 }
-.average3 td{
-	width:calc(100%/3);
+.yummy .calculator{
+    letter-spacing:1px;
+    margin:20px auto 30px;
+    display:block;
+    background-color:#67cbb2;
+    padding: 0px 30px;
+    line-height:50px;		
+    color:#fff;
+    text-align:center;
+    border-radius:10px;	
+    font-weight:bolder;	
+  box-shadow: 0px 2px #21929b;
 }
-.average4 td{
-	width:25%;
-}
-.average5 td{
-	width:20%;
-}
-.average6 td{
-	width:calc(100%/6);
-}
-.average7 td{
-	width:calc(100%/7);
-}
-/*==================
-    均分表格結束
-==================*/
+/*=================
+    試算按鈕結束
+=================*/
 
+
+
+
+/*均分表格*/
+.average2 td {
+    width: 50%;
+}
+
+.average3 td {
+    width: calc(100%/3);
+}
+
+.average4 td {
+    width: 25%;
+}
+
+.average5 td {
+    width: 20%;
+}
+
+.average6 td {
+    width: calc(100%/6);
+}
+
+.average7 td {
+    width: calc(100%/7);
+}
+
+/*均分表格*/
 
 .noshow_h2 {
     font-weight: 800;
@@ -330,145 +367,120 @@ mark-blue {
 
 /* 畫重點*/
 .yPoint {
-    margin-left: 10px;
-    color: #ed9e91;
-    padding: 10px;
+    color: #71AFAC;
     font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 30px;
+    line-height: 3rem;
+    font-size: 2.1rem;
     text-align: center;
-    border-bottom: 2px dotted #ed9e91;
-    margin: 50px 0px;
+    border-bottom: 1px solid #71AFAC;
+    margin: 30px 0px;
 }
 
 /* 縱狀表格*/
 .yTable_2ver {
     text-align: center;
-
+    background-color: #Fff;
 }
 
 .yTable_2ver tr:first-child>td:nth-child(odd) {
-    background-color: #fdcaa9;
-    border: 1px solid #fdcaa9;
-    color: #4c391d;
+    background-color: #63BCCC26;
+    border: 1px solid #71AFAC;
+    color: #215e6a;
     font-weight: 600;
 }
 
 .yTable_2ver tr:first-child>td:nth-child(even) {
-    background-color: #c17768;
-    border: 1px solid #c17768;
+    background-color: #63BCCC;
+    border: 1px solid #71AFAC;
     color: #fff;
     font-weight: 600;
 }
 
 .yTable_2ver tr:not(:first-child)>td:nth-child(even) {
-    background-color: #fff9f4;
+    background: #63BCCC10;
 }
 
 .yTable_2ver tr:not(:first-child)>td {
-    border: 1px solid #c17768;
-    border-bottom: 1px dashed #c17768;
-    border-top: none;
+    border: 1px solid #71AFAC;
 }
 
 
 /*========================
  	 2欄式表格樣式---開始
 ========================*/
-.yTable_2x6 {	
-border-collapse: collapse;
-letter-spacing:0.1em;
-border:1px solid #dd6f61;
-border-left:8px solid #dd6f61;           
+.yTable_2x6 {
+    border-collapse: collapse;
+    letter-spacing: 0.1em;
+    border: 1px solid #dd6f61;
+    border-left: 8px solid #dd6f61;
 }
 
-.yTable_2x6 tr{
-flex-wrap:nowrap;
-justify-content: center;
-align-items: center; 
+.yTable_2x6 tr {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.yTable_2x6 tr>td{
-border:1px solid #fdcaa9;
-padding: 15px;
-background-color:#e9ccbf;
-text-align: center;
-color: black;
-font-weight:600;
+.yTable_2x6 tr>td {
+    border: 1px solid #fdcaa9;
+    padding: 15px;
+    background-color: #e9ccbf;
+    text-align: center;
+    color: black;
+    font-weight: 600;
 }
 
 /* 選擇偶數行的第二欄為底色白色 */
-.yTable_2x6 tr:nth-child(even)>td:not(:first-child){
-background-color:#fff;
-font-weight:500;
-color: rgb(22, 39, 39);
+.yTable_2x6 tr:nth-child(even)>td:not(:first-child) {
+    background-color: #fff;
+    font-weight: 500;
+    color: rgb(22, 39, 39);
 }
 
 /* 選擇奇數行的第二欄為底色淺黃 */
-.yTable_2x6 tr:nth-child(odd)>td:not(:first-child){
-font-weight:500;
-background-color:#f9f6ee;
-color: rgb(22, 39, 39);
+.yTable_2x6 tr:nth-child(odd)>td:not(:first-child) {
+    font-weight: 500;
+    background-color: #f9f6ee;
+    color: rgb(22, 39, 39);
 }
 
 
 /* 選擇每一行的第一欄*/
-.yTable_2x6 tr>td:first-child{
-  border-bottom: 2px dashed  #fff !important;
-	color:#874532;
-	width: 30%;
+.yTable_2x6 tr>td:first-child {
+    border-bottom: 2px dashed #fff !important;
+    color: #874532;
+    width: 30%;
 }
+
 /*========================
  	 2欄式表格樣式---結束
 ========================*/
 
-
-
 /*多欄式表格 突出好事貸---開始*/
 .yTable_multi {
     border-collapse: collapse;
-    background-color: #fff;
-
+    background-color: #FFF;
 }
 
 /*上方第一欄*/
 .yTable_multi tr:first-child {
-    background-color: #bb9075;
-    color: #fff;
+    background-color: #DDECF3;
+    color: #4B647E;
     font-weight: 600;
 }
-
-.yTable_multi tr>td:nth-child(even) {
-    background-color: #fffbf5;
-}
-
-
-.yTable_multi tr:first-child>td:nth-child(even) {
-    background-color: #dbcab4;
-    color: #8b3e3e;
-}
-
-
 
 /*左方第一欄*/
 .yTable_multi tr>td:first-child {
-    background-color: #997a66;
-    color: #fff;
+    background-color: #B6E0E9;
     font-weight: 600;
-    border-bottom: 1px solid #fff;
-
+    color: #243546;
 }
 
 .yTable_multi tr>td {
     text-align: center;
-    justify-content: center;
-    align-items: center;
     padding: 15px;
-    border-color: #b77b7b;
-
+    border-color: #758EB7;
 }
-
-
 
 
 /*強調項目(橫)*/
@@ -568,24 +580,29 @@ color: rgb(22, 39, 39);
 
 /* 棋盤表格樣式---結束 */
 
-/*小知識--20230301*/
+/*=================
+ 小知識--20230302
+=================*/
 div.Tips {
     margin: 20px 0px;
-    padding: 8px 25px 10px;
+    padding: 5px 25px 0px;
     border: 1px solid #dda96a;
     border-left: 10px solid #dda96a;
+    font-size: 18px;
 
 }
 
-div.Tips hx {
-    margin-left: 10px;
+div.Tips h4 {
+    margin: 0px 5px;
     color: #aa6829;
     font-weight: 500;
-    font-style: italic;
+    font-size: 20px;
+    line-height: 3.6rem;
 }
 
-div.Tips hx:before {
+div.Tips h4:before {
     content: url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
+    display: inline-block;
 }
 
 div.Tips p {
@@ -595,9 +612,11 @@ div.Tips p {
     color: #584444;
 }
 
-/*小知識--之後會刪掉*/
+/*==================
+	小知識--之後會刪掉
+====================*/
 ul.Tips {
-    margin-top: 20px;
+    margin: 20px 0px !important;
     padding: 8px 25px 10px;
     border: 1px solid #dda96a;
     border-left: 10px solid #dda96a;
@@ -609,7 +628,6 @@ ul.Tips li:first-child {
     list-style-image: url('https://0800213886.com.tw/wp-content/uploads/2021/12/tipps-1.png');
     color: #aa6829;
     font-weight: 500;
-    font-style: italic;
 }
 
 ul.Tips>li:nth-child(2) {
@@ -619,151 +637,97 @@ ul.Tips>li:nth-child(2) {
     color: #584444;
 }
 
-/*小知識--結束*/
+/*=================
+ 		小知識結束
+=================*/
 
 
-/*延伸閱讀樣式--開始*/
+/*=================
+  延伸閱讀樣式開始
+===================*/
 .readmore {
     position: relative;
-    margin: 80px 0px;
+    margin: 30px 0px;
     display: flex;
-    padding: 30px;
-    background-color: #f9f5f2;
-
-}
-
-.readmore::before {
-    top: -2px;
-    left: -2px;
-    clip-path: polygon(100% 25%, 25% 25%, 25% 100%, 0 100%, 0 0, 100% 0);
-    z-index: 2;
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: #f3d198;
-}
-
-.readmore::after {
-    bottom: -2px;
-    right: -2px;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 75%, 75% 75%, 73% 0);
-    z-index: 2;
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: #f3d198;
+    padding: 20px;
+    border: 1px solid #71AFAC;
 }
 
 .readmore button {
-    background-color: #e67c60;
+    background: #71AFAC;
     cursor: default;
     border: none;
+    text-decoration: none;
     min-width: 120px;
     font-size: 18px;
-    padding: 5px 18px;
+    padding: 10px 18px;
     color: #fff;
-
 }
 
 .readmore a {
-    font-weight: 600;
     margin: 10px 20px;
     position: relative;
-    box-shadow: 0px 0px #fff;
-    color: #7a302d;
+    color: #555;
 }
 
-
-/*hover*/
 .readmore a:hover {
     color: #bd6b2b;
     background-color: rgba(255, 255, 255, 0);
-
 }
 
+/*=================
+  延伸閱讀樣式結束
+===================*/
 
-/*延伸閱讀樣式-下方卷軸--結束*/
-
-/*超連結的下方橫條*/
-.readmore a::after {
-    position: absolute;
-    border-radius: 5px;
-    left: 50%;
-    content: '';
-    width: 0%;
-    height: 3px;
-    display: block;
-    background-color: #c78f42;
-    transition: all 0.4s ease-in-out;
-}
-
-/*hover*/
-.readmore a:hover {
-    color: #bd6b2b;
-    font-weight: 600;
-}
-
-.readmore a:hover::after {
-    width: 100%;
-    left: 0%;
-
-}
-
-/*延伸閱讀樣式--結束*/
-
-
-
-/*問答--20230301修改 */
+/*=================
+ 問答--20230302修改 
+=================*/
 .QA2 {
-    margin: 30px 0px 10px;
-}
-
-.QA2:nth-child(odd)>li:first-child {
-    background-color: #ef917e;
+    margin: 30px 0px !important;
 }
 
 .QA2 li {
     list-style: none;
-    padding: 0px 10px 10px;
-    margin-top: 5px;
-    background-color: #fff8ec;
+    background: #fff;
+    margin: 0 !important;
 }
 
-.QA2 li:first-child {
+.QA2 h4 {
+    margin: 10px 0px;
+    padding: 8px 10px;
     color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 3.6rem;
     font-weight: 600;
-    background-color: #dd5858;
-    box-shadow: 0px 2px #dd5858;
+    background: #758EB7;
+
 }
 
-.QA2 li:last-child {
-    color: #563838;
+.QA2 p {
+    color: #303030;
     font-weight: 500;
-    margin-top: -10px;
-    padding: 8px;
+    font-size: 16px;
+    padding: 0px 10px 15px 10px;
+    line-height: 32px;
 }
 
-.QA2 li>span {
-    color: red;
-    font-weight: 700;
+.QA2 li span.none {
+    color: #758EB7;
+    font-size: 20px;
+    display: inline-block;
+    width: 36px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
     margin-right: 10px;
+    border-radius: 10px;
+
 }
 
 .QA2 li a {
-    border-bottom: 1px solid red;
-}
-
-span.none {
-    font-size: 18px;
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-    margin-left: -10px;
-    padding: 5px 20px 0px 15px;
-    background-color: #fff;
-    display: inline-block;
-    color: #dd5858;
-    margin-right: 10px;
+    border-bottom: 1px solid #dd5858;
 }
 
 /*問答--開始*/
@@ -806,12 +770,59 @@ span.none {
     border-bottom: 1px solid red;
 }
 
-/*問答--結束*/
+/*=================
+     問答--結束
+ =================*/
 
 
+/* =====================
+      跳板區塊開始
+=====================*/
+.jumpBoard {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
 
-/*不希望被抓進大綱的小列表--開始*/
-/*不希望被抓進大綱的小列表--結束*/
+.jumpBoard .description {
+    border-right: 1px solid #178D9E;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.jumpBoard .description .des_title {
+    font-size: 21px;
+    color: #178D9E;
+    margin: 0;
+    text-align: left;
+    font-weight: 600;
+}
+
+.jumpBoard .jumpBtn {
+    background-color: #178D9E;
+    color: #fff;
+    width: 140px;
+    margin: 0px 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.jumpBoard .jumpBtn:hover {
+    background-color: #15536A;
+}
+
+/* =====================
+      跳板區塊結束 
+=====================*/
+
 
 @media screen and (min-width: 460px) and (max-width: 875px) {
     .yummy h2 {
@@ -871,13 +882,9 @@ span.none {
 
 
 @media screen and (max-width: 459px) {
-    .yummy {
-        font-size: 20px;
-        line-height: 39px;
-    }
 
     .yummy h2 {
-        font-size: 28px;
+        font-size: 26px;
 
     }
 
@@ -964,6 +971,40 @@ span.none {
         padding: 8px;
     }
 
+    /* 小知識--20230302 */
+    div.Tips {
+        font-size: 18px;
+        padding: 10px 15px 0px;
+
+    }
+
+    div.Tips p {
+        line-height: 3.2rem;
+    }
+
+    div.Tips h4 {
+        font-size: 18px;
+        line-height: 2.8rem;
+    }
+
+    ul.QA2 {
+        padding-left: 0 !important;
+    }
+
+    .QA2 li {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .QA2 li h4 {
+        font-size: 18px;
+        line-height: 2.8rem;
+    }
+
+    .QA2 li p {
+        line-height: 3.2rem;
+    }
+
     /*問答--開始*/
     .QA {
         padding-left: 0px;
@@ -986,5 +1027,6 @@ span.none {
     }
 
     /*問答--結束*/
+
 
 }

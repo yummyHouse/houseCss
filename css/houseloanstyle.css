@@ -121,6 +121,7 @@ button{
 	.yummy .snsLink{
 		letter-spacing:1px;
 		margin:20px auto 30px;
+		text-decoration: none;
 		display:block;
 		background-color:#c56065;
 		padding: 0px 30px;
@@ -142,6 +143,7 @@ button{
 	}
 	.yummy .calculator{
 		letter-spacing:1px;
+		text-decoration: none;
 		margin:20px auto 30px;
 		display:block;
 		background-color:#67cbb2;
