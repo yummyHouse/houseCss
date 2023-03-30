@@ -121,6 +121,8 @@ button{
 	.yummy .snsLink{
 		letter-spacing:1px;
 		margin:20px auto 30px;
+		max-width: 190px;
+		min-width: 120px;
 		text-decoration: none;
 		display:block;
 		background-color:#c56065;
@@ -144,6 +146,8 @@ button{
 	.yummy .calculator{
 		letter-spacing:1px;
 		text-decoration: none;
+		max-width: 190px;
+		min-width: 120px;
 		margin:20px auto 30px;
 		display:block;
 		background-color:#67cbb2;
@@ -312,7 +316,9 @@ button{
 	letter-spacing: 0.1em;
 }
 
-/* =================== 2022_0711計算區塊開始 ===================*/
+/* =======================
+　　2022_0711計算區塊開始
+==========================*/
 .calcu_block{		
 	padding:15px 40px 20px;
 	background:#fffcee;
@@ -344,6 +350,8 @@ content:url('https://houseloan.tw/wp-content/uploads/2022/07/calculator_icon.png
 	top:5px;
 	right:10px;
 }
+
+
 @media screen and (max-width:767px) {	
 	
 	.calcu_block{		
@@ -367,10 +375,13 @@ content:url('https://houseloan.tw/wp-content/uploads/2022/07/calculator_icon.png
 	}
 	
 }
+/* =======================
+　　2022_0711計算區塊結束
+==========================*/
 
-/* =================== 2022_0711計算區塊結束 ===================*/
-
-/* ============= 收合式分類項目 ============ */
+/* ========================
+     收合式分類項目開始 
+==========================*/
 .sTitle{
 	display:block;
 	text-align:center;
@@ -416,6 +427,7 @@ content:url('https://houseloan.tw/wp-content/uploads/2022/07/calculator_icon.png
 .sTitle2 .item{
 	display:flex;
 	background:#fff;
+	flex-wrap: wrap;
 	justify-content:center;
 	border-radius:0px 0px 15px 15px;
 		
@@ -448,8 +460,9 @@ content:url('https://houseloan.tw/wp-content/uploads/2022/07/calculator_icon.png
 	background:#009941;
 	color:#fff;
 }
-
-/* ============= 收合式分類項目 ============ */	
+/* ========================
+     收合式分類項目結束 
+==========================*/
 
 /* 棋盤表格樣式---開始 */
 .yTable_chessboard {
@@ -1041,16 +1054,15 @@ span.none {
 
 
 
+/* ====================
+        氣球開始
+====================== */
 
-
-
-/* 氣球 */
 .balloonBox {
 	justify-content: center;
 	padding: 15px;
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 .balloon {
@@ -1066,7 +1078,17 @@ span.none {
 	font-size: 17px;
 	line-height: 28px;
 }
-
+/*======================== 
+最好不要搭配flip使用，因為flip有做上下交錯
+======================== */
+.balloon.arrow{
+	clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
+	padding:30px 40px 30px 50px;
+	align-items:middle;
+	display:flex;
+	flex-direction:column;	
+	background:#e7ebeb;
+}
 .flip {
 	background-color: #f5f2d2;
 	margin-left: -30px;
@@ -1082,7 +1104,6 @@ span.none {
 	margin-left: 30px;
 	margin-top: 5px;
 }
-
 @keyframes floating {
 	from {
 		transform: translate(0, 0px);
@@ -1097,8 +1118,70 @@ span.none {
 	}
 }
 
-/*不希望被抓進大綱的小列表--開始*/
-/*不希望被抓進大綱的小列表--結束*/
+@media screen and (max-width: 459px) {
+	.balloon {
+		font-size: 18px;
+		line-height: 27px;
+		padding: 32px 30px;
+		margin: -15px 0px;
+	}
+
+	.balloon:last-child {
+		margin-bottom: 2px;
+	}
+}
+/* ====================
+        氣球結束
+====================== */
+
+/* ======================
+		作者簡介開始
+========================= */
+
+.yummy .authorIntro {
+	position: relative;
+	border: 5px double #bfbfe9;
+	margin: 50px auto;
+	padding: 40px 50px 0px;
+}
+
+.yummy .author:hover {
+	color: #9999db;
+}
+
+.yummy .author {
+	font-size: 28px;
+	position: absolute;
+	top: -16px;
+	background-color: #fff;
+	padding: 0px 20px;
+}
+
+.yummy .author::before {
+	content: '作者簡介－';
+}
+
+.yummy .author::after {
+	position: absolute;
+	content: '';
+	opacity: .2;
+	mix-blend-mode: multiply;
+	background-color: yellow;
+	width: 100px;
+	height: 20px;
+	display: block;
+	top: 7px;
+	right: 10px;
+}
+
+.yummy .authorIntro ul {
+	background-color: #f5fafd;
+	padding: 10px;
+	margin: 20px -10px;
+}
+/* ======================
+		作者簡介結束
+========================= */
 
 @media screen and (min-width: 460px) and (max-width: 875px) {
 
@@ -1141,49 +1224,6 @@ span.none {
 
 }
 
-/* 作者簡介 */
-
-.authorIntro {
-	position: relative;
-	border: 5px double #bfbfe9;
-	margin: 50px auto;
-	padding: 40px 50px 0px;
-}
-
-.author:hover {
-	color: #9999db;
-}
-
-.author {
-	font-size: 28px;
-	position: absolute;
-	top: -16px;
-	background-color: #fff;
-	padding: 0px 20px;
-}
-
-.author::before {
-	content: '作者簡介－';
-}
-
-.author::after {
-	position: absolute;
-	content: '';
-	opacity: .2;
-	mix-blend-mode: multiply;
-	background-color: yellow;
-	width: 100px;
-	height: 20px;
-	display: block;
-	top: 7px;
-	right: 10px;
-}
-
-.authorIntro ul {
-	background-color: #f5fafd;
-	padding: 10px;
-	margin: 20px -10px;
-}
 
 
 @media screen and (max-width: 459px) {
@@ -1214,16 +1254,7 @@ span.none {
 
 	}
 
-	.balloon {
-		font-size: 18px;
-		line-height: 27px;
-		padding: 32px 30px;
-		margin: -15px 0px;
-	}
-
-	.balloon:last-child {
-		margin-bottom: 2px;
-	}
+	
 
 
 
