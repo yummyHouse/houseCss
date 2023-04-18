@@ -973,17 +973,19 @@ ul.Tips>li:nth-child(2) {
      收合式分類項目結束 
 ==========================*/
 
+
 /* =====================
       跳板區塊開始
 =====================*/
 .jumpBoard {
-    width: 100%;
+    max-width: 900px;
     margin: 40px auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: #fff;
     border-radius: 15px;
+    font-size: 17px;
     padding: 15px;
     box-shadow: 2px 2px #DDECF3;
 }
@@ -992,6 +994,8 @@ ul.Tips>li:nth-child(2) {
     border-right: 1px solid #758EB7;
     padding: 10px 20px;
     text-align: left;
+    max-width: 600px;
+    width: 70%;
 }
 
 .jumpBoard .description>p {
@@ -1001,15 +1005,23 @@ ul.Tips>li:nth-child(2) {
 .jumpBoard .description .des_title {
     font-size: 21px;
     color: #758EB7;
-    margin: 0;
+    margin-bottom: 10px;
     text-align: left;
     font-weight: 600;
+}
+
+.yummy .jumpBoard p {
+    margin: 0px;
 }
 
 .jumpBoard .jumpBtn {
     background-color: #758EB7;
     color: #fff;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
     width: 140px;
+    text-align: center;
     margin: 0px 20px;
     padding: 10px 30px;
     border-radius: 50px;
@@ -1020,6 +1032,34 @@ ul.Tips>li:nth-child(2) {
 
 .jumpBoard .jumpBtn:hover {
     background-color: #15536A;
+}
+
+@media screen and (max-width: 787px) {
+    .jumpBoard {
+        flex-direction: column;
+        padding: 20px 15px;
+
+    }
+
+    .jumpBoard .description {
+        border: none;
+        padding: 0px 10px;
+        margin: 0px auto;
+    }
+
+    .jumpBoard .description .des_title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        line-height: 30px;
+        border-bottom: 1px solid #758EB7;
+    }
+
+    .jumpBoard .jumpBtn {
+        padding: 5px 25px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
 }
 
 /* =====================

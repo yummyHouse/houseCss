@@ -985,7 +985,9 @@ span.none {
 }
 /*問答--結束*/
 
-/* 跳板區塊JumpBoard--開始 */
+/* =========================
+     跳板區塊JumpBoard--開始 
+============================*/	
 .jumpBoard {
 	width: 100%;
 	max-width:900px;
@@ -1001,7 +1003,7 @@ span.none {
 }
 .jumpBoard .description{
 	border-right:1px solid #178D9E;
-	padding-right: 40px;
+	padding-right: 40px;	
 	margin:10px;
 	font-size:18px;
 	text-align: left;
@@ -1017,6 +1019,9 @@ span.none {
 .jumpBoard .jumpBtn{	
 	background-color:#178D9E;
 	color: #fff;	
+	display:block;
+	min-width:150px;
+	text-align:center;
 	padding: 10px 30px;	
 	border-radius: 50px;
 	cursor: pointer;
@@ -1027,7 +1032,7 @@ span.none {
 	background-color:#15536A;
 }
 
-@media screen and (max-width:787px){
+@media screen and (max-width: 787px) {
 	.jumpBoard {
 		flex-direction:column;
 		padding:20px 15px;
@@ -1040,18 +1045,20 @@ span.none {
 		line-height:2rem;
 	}
 	.jumpBoard .description .des_title{
-	 font-size: 19px;	
-	 margin-bottom:10px;
-	 padding-bottom:10px;
-   line-height:1.8rem;
-	 border-bottom:1px solid #178D9E;
+	    font-size: 19px;	
+	    margin-bottom:10px;
+	    padding-bottom:10px;
+        line-height:1.8rem;
+	    border-bottom:1px solid #178D9E;
   }
 	.jumpBoard .jumpBtn{
-		padding:3px 25px;		
+		padding:5px 25px;
+		font-size:18px;
 	}
 }
-/* 跳板區塊JumpBoard--結束 */
-
+/* =========================
+     跳板區塊JumpBoard--結束 
+============================*/	
 
 
 /* ====================

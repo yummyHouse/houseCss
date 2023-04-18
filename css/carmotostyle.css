@@ -1,10 +1,18 @@
-.post-976, .post-41, .post-32, .post-29 {
+.post-976,
+.post-41,
+.post-32,
+.post-29 {
     display: none !important;
 }
 
 mark {
     transition: color 300ms ease-out;
     background: linear-gradient(to top, rgba(255, 235, 70, 0.6) 1em, transparent 1em);
+    font-weight: 600;
+}
+
+.yummy table a:visited {
+    color: unset;
 }
 
 mark-red {
@@ -22,7 +30,8 @@ table {
     border-collapse: collapse;
 }
 
-tr, td {
+tr,
+td {
     color: #000;
 }
 
@@ -69,7 +78,8 @@ input[type=radio] {
 
 }
 
-.elementor-18 .elementor-element.elementor-element-941fec2 .elementor-field-group .elementor-field, .elementor-18 .elementor-element.elementor-element-941fec2 .elementor-field-subgroup label {
+.elementor-18 .elementor-element.elementor-element-941fec2 .elementor-field-group .elementor-field,
+.elementor-18 .elementor-element.elementor-element-941fec2 .elementor-field-subgroup label {
     font-size: 2rem;
 }
 
@@ -90,7 +100,9 @@ input[type=radio] {
     margin: 30px auto;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,6 +110,10 @@ input[type=radio] {
     height: 100%;
 }
 
+
+/* ==============
+介紹型表單開始
+=========== */
 .introul>li:nth-child(odd) {
     font-weight: 600;
     margin-top: 30px;
@@ -111,6 +127,83 @@ input[type=radio] {
     font-weight: 400;
     color: #4e4e4e;
 }
+
+/* ===介紹型表單Ver.2=== */
+
+.introul2>li {
+    list-style: none;
+    color: #000 !important;
+    font-weight: 400 !important;
+}
+
+.introul2>li h4 {
+    color: #3561b9;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.introul2>li h4::before {
+    content: '▪';
+    margin-right: 5px;
+}
+
+.introul2>li p {
+    color: #000;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.introul2.noBR>li h4 {
+    display: inline-block;
+
+    margin-bottom: 0px;
+    line-height: 32px;
+}
+
+.introul2.noBR li>p {
+    display: inline;
+}
+
+/* ==============
+表單與介紹型表單Ver.2優缺點============== */
+
+.yummy ul.up>li {
+    color: #31994c;
+    list-style: none;
+}
+
+.yummy ul.up>li::before,
+.yummy ul.up>li h4::before {
+    content: url('https://carmoto.com.tw/wp-content/uploads/2023/03/O_ICON-e1680139690854.png');
+    color: #31994c;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.yummy ul.down>li {
+    color: #ab4545;
+    list-style: none;
+}
+
+.yummy ul.down>li::before,
+.yummy ul.down>li h4::before {
+    content: url('https://carmoto.com.tw/wp-content/uploads/2023/03/X_ICON-e1680139711847.png');
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #ab4545;
+}
+
+.yummy ul.introul2.down>li::before,
+.yummy ul.introul2.up>li::before {
+    content: '';
+}
+
+/* ==============
+介紹型表單Ver.2結束
+============== */
+
 
 .stressinLi {
     background-color: #ebffee;
@@ -128,31 +221,6 @@ input[type=radio] {
     font-weight: 500;
     font-family: 'Noto Sans TC', sans-serif;
 }
-
-/* 試算按鈕 */
-.yummy .calculator:hover {
-    background-color: #67cbb2;
-    box-shadow: 0px 0px #21929b;
-    transform: scale(0.98);
-}
-
-.yummy .calculator {
-    letter-spacing: 1px;
-    margin: 0 auto;
-    display: block;
-    background-color: #67cbb2;
-    width: 160px;
-    line-height: 50px;
-    height: 50px;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bolder;
-
-    box-shadow: 0px 2px #21929b;
-}
-
-/* 試算按鈕 */
 
 .yummy h2 {
     margin: 80px 0px 20px;
@@ -188,13 +256,24 @@ input[type=radio] {
     line-height: 5rem;
 }
 
+/* ol開始--原來小括號做起來這麼迂迴 */
 .yummy ol {
     color: #333;
-    list-style-position: inside;
+    counter-reset: list;
     padding-left: 40px;
     margin: 35px 0px;
-
 }
+
+.yummy ol>li {
+    list-style: none;
+}
+
+.yummy ol>li:before {
+    content: "(" counter(list) ") ";
+    counter-increment: list;
+}
+
+/* ol結尾--原來小括號做起來這麼迂迴 */
 
 .yummy p {
     margin: 0px auto 40px;
@@ -250,9 +329,9 @@ input[type=radio] {
 
 .sTitle .item>span {
     padding: 10px 30px 10px 20px;
-    width: 280px;
     margin: 20px;
     font-size: 1.8rem;
+    flex-grow: 1;
     line-height: 3.5rem;
     background: #e9f4fd;
     color: #4b5093;
@@ -267,13 +346,110 @@ input[type=radio] {
     background: #7381b3;
 }
 
-/* 氣球 */
+/* =====================
+      收合式分類項目2 
+======================== */
+.sTitle2 {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.sTitle2 .item {
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+.sTitle2 .item>div {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 15px 5px;
+    background: #e9f4fd;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    border-radius: 15px;
+}
+
+.sTitle2 .item>div>h4 {
+    color: #7381b3;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.sTitle2 .item>div>p {
+    margin: 0px;
+}
+
+.sTitle2 summary {
+    padding: 8px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #7381b3;
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px) {
+
+    .sTitle {
+        padding: 8px;
+    }
+
+    .sTitle .item {
+        display: flex;
+        background: #fff;
+        justify-content: center;
+    }
+
+    .sTitle .item>span {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .sTitle summary {
+        padding: 5px;
+        color: #fff;
+        background: #7381b3;
+    }
+
+    .sTitle .item>span {
+        margin: 8px 5px;
+        font-size: 18px;
+
+    }
+
+    .sTitle2 .item {
+        padding: 10px;
+    }
+
+    .sTitle2 .item>div {
+        margin: 5px;
+    }
+}
+
+/* ========================
+     收合式分類項目結束 
+==========================*/
+
+/* ========================
+         氣球開始 
+========================*/
 .balloonBox {
     justify-content: center;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .balloon {
@@ -293,13 +469,18 @@ input[type=radio] {
     color: #a73660;
 }
 
+.balloon>p,
+.balloon>h4 {
+    margin: 0px;
+}
+
 .balloon.arrow {
     clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
-    padding: 30px 40px 30px 50px;
-    align-items: middle;
+    padding: 20px 30px 20px 50px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
-    background: #e7ebeb;
+    background: #f3e7d2;
 }
 
 .flip {
@@ -307,33 +488,34 @@ input[type=radio] {
     margin-left: -30px;
     margin-top: 40px;
 }
+/* ========================
+         氣球結束 
+========================*/
 
-/* 棋盤表格樣式---開始 */
+/*==========================
+     棋盤表格樣式---開始 
+==========================*/
 .yTable_chessboard {
     margin: 30px auto;
-    border: 1px solid #6899d1;
-    box-shadow: 5px 5px #d1dde9;
 }
 
 .yTable_chessboard tr>td {
-    display: table-cell;
-    vertical-align: middle;
     text-align: center;
     padding: 10px;
-    border-left: 1px solid #95b8e0;
-    border-bottom: 1px solid #95b8e0;
+    border: 1px solid #80c5cb;
     background-color: rgb(255, 255, 255);
 }
 
 .yTable_chessboard tr:nth-child(odd)>td:nth-child(odd) {
-    background-color: rgb(235, 246, 255);
+    background-color: #ecf9fb;
 }
 
 .yTable_chessboard tr:nth-child(even)>td:nth-child(even) {
-    background-color: rgb(235, 246, 255);
+    background-color: #ecf9fb;
 }
-
-/* 棋盤表格樣式---結束 */
+/*==========================
+     棋盤表格樣式---結束 
+==========================*/
 
 /* 縱狀表格*/
 .yTable_2ver {
@@ -378,7 +560,9 @@ input[type=radio] {
     font-size: 26px;
 }
 
-/* 畫重點*/
+/*===================
+      特殊標題
+====================*/
 .yPoint {
     color: #3561b9;
     margin: 30px auto 10px;
@@ -387,6 +571,62 @@ input[type=radio] {
     text-align: center;
     letter-spacing: 0.1em;
 }
+
+/*=================
+    按鈕開始
+=================*/
+/* 試算按鈕 */
+.yummy .calculator:hover {
+    background-color: #21929b;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.yummy .calculator {
+    letter-spacing: 1px;
+    margin: 20px auto;
+    max-width: 190px;
+    min-width: 120px;
+    text-decoration: none;
+    display: block;
+    background-color: #57BFCF;
+    padding: 0px 30px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 0px 2px #21929b;
+}
+
+/* 社群連結 */
+.yummy .snsLink:hover {
+    background: #d56e25;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.yummy .snsLink {
+    letter-spacing: 1px;
+    margin: 20px auto;
+    max-width: 190px;
+    min-width: 120px;
+    text-decoration: none;
+    display: block;
+    background-color: #E2A62D;
+    padding: 0px 30px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 0px 2px #d56e25;
+}
+
+/*=================
+    按鈕結束
+=================*/
+
 
 /*均分表格*/
 .average2 td {
@@ -429,6 +669,15 @@ input[type=radio] {
     letter-spacing: 0.1em;
     border: 1px solid #b1c8e3;
     box-shadow: 5px 5px #d1dde9;
+}
+
+.yTable_2x6 a {
+    color: white;
+    border-bottom: 1px dashed;
+}
+
+.yTable_2x6 a:hover {
+    color: yellow;
 }
 
 .yTable_2x6 tr {
@@ -660,8 +909,6 @@ input[type=radio] {
 }
 
 
-
-
 /*小提示20230301---開始*/
 div.Tips {
     padding: 10px 25px 25px;
@@ -671,9 +918,10 @@ div.Tips {
     margin: 10px 0px 50px;
 }
 
-div.Tips hx {
+div.Tips h4 {
     font-weight: 600;
     letter-spacing: 0.1em;
+    margin: 8px auto;
     display: flex;
     justify-content: center;
     color: #59abbd;
@@ -681,7 +929,7 @@ div.Tips hx {
     font-size: 2.3rem;
 }
 
-div.Tips hx::before {
+div.Tips h4::before {
     content: url('https://carmoto.com.tw/wp-content/uploads/2022/04/tipicon1.png');
     margin-right: 10px;
 }
@@ -770,76 +1018,88 @@ ul.Tips>li:nth-child(2) {
 
 
 /*問答20230301--開始*/
-.QA2{
-	margin:40px 0px 40px -40px;		
+.QA2 {
+    margin: 40px auto;
 }
-span.none{	
-	font-weight:600;	
-	color:#293e7a;
-	background:#bde1e7;
-	padding:8px 12px;
-	margin-right:15px;
-	padding:10px;	
+
+span.none {
+    font-weight: 600;
+    color: #293e7a;
+    background: #bde1e7;
+    padding: 8px 12px;
+    margin-right: 15px;
+    padding: 10px;
 }
-.QA2 li>hx{
-	padding-left:20px;
-	color:#293e7a;
-	display:block;
-	line-height:42px;
-	font-weight:600;
-	background-color:#bde1e7;
+
+.QA2 li>h4 {
+    padding: 15px 15px 10px;
+    color: #293e7a;
+    display: block;
+    margin: 0;
+    font-weight: 600;
+    background-color: #bde1e7;
 }
-.QA2 li{		
-	list-style:none;	
-	background-color:#fff;	
-	padding-bottom:0px;
-	border-bottom:1px solid	#bde1e7;
-	margin-bottom:20px;
+
+.QA2 li {
+    list-style: none;
+    background-color: #fff;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #bde1e7;
+    margin-bottom: 20px;
 }
-.QA2 li>p{
-	line-height:4rem;
-	padding-left:20px;
-	margin:10px;
+
+.QA2 li>p {
+    line-height: 4rem;
+    padding-left: 5px;
+    margin: 10px;
 }
-.QA2 li mark{
-	font-weight:600;	
+
+.QA2 li mark {
+    font-weight: 600;
 }
 
 
 /*問答--開始*/
-.QA{
-	margin:40px 0px 40px -40px;	
+.QA {
+    margin: 40px auto;
 }
-.QA li:nth-child(even) span.none{
-	color:#293e7a;
-	background:#bde1e7;
-	padding:8px 12px;
-	background-size: contain;	
-background-repeat: no-repeat;
+
+.QA li:nth-child(even) span.none {
+    color: #293e7a;
+    background: #bde1e7;
+    padding: 8px 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.QA li:nth-child(odd) span{
-	padding:10px 5px 10px 12px;	
+
+.QA li:nth-child(odd) span {
+    padding: 10px 5px 10px 12px;
 }
-.QA li{		
-	list-style:none;
-	padding:5px 20px;
-	background-color:#fff;	
+
+.QA li {
+    list-style: none;
+    padding: 5px 20px;
+    background-color: #fff;
 }
-.QA li:nth-child(odd){
-	color:#293e7a;
-	font-weight:600;
-	background-color:#bde1e7;
+
+.QA li:nth-child(odd) {
+    color: #293e7a;
+    font-weight: 600;
+    background-color: #bde1e7;
 }
+
 .QA li:nth-child(even) {
-	font-weight:400;
-	color:#2d3460;
-	border-bottom:1px solid	#bde1e7;
-	padding:20px;
-	line-height:3.6rem;
+    font-weight: 400;
+    color: #2d3460;
+    border-bottom: 1px solid #bde1e7;
+    padding: 20px;
+    line-height: 3.6rem;
 }
-.QA li mark{
-	font-weight:600;	
+
+.QA li mark {
+    font-weight: 600;
 }
+
 /*問答--結束*/
 
 /* 作者簡介 */
@@ -886,8 +1146,145 @@ background-repeat: no-repeat;
     margin: 20px -10px;
 }
 
-/*不希望被抓進大綱的小列表--開始*/
-/*不希望被抓進大綱的小列表--結束*/
+/* ===================
+    計算區塊開始
+===================*/
+.calcu_block {
+    font-size: 16px;
+    padding: 15px 40px 20px;
+    background: #fff;
+    border-right: 6px solid #57BFCF;
+    position: relative;
+}
+
+.calcu_block::after {
+    content: url('https://iloan.tw/wp-content/uploads/2023/03/calcu_dec.png');
+    position: absolute;
+    transform: rotate(15deg);
+    right: 10px;
+    opacity: .5;
+    zoom: .4;
+}
+
+.calcu_block>.cal_title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #28abbf;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #A5CAD2;
+    display: block;
+}
+
+@media screen and (max-width:767px) {
+    .calcu_block {
+        padding: 15px 20px 30px;
+    }
+
+    .calcu_block::after {
+        opacity: .5;
+        zoom: .35;
+        bottom: -20px;
+    }
+}
+
+/* ===================
+    計算區塊結束
+===================*/
+
+/* =====================
+      跳板區塊開始
+=====================*/
+.jumpBoard {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 17px;
+    line-height: 32px;
+    padding: 15px;
+    box-shadow: 2px 2px #DDECF3;
+}
+
+.jumpBoard .description {
+    border-right: 1px solid #57BFCF;
+    padding: 10px 20px;
+    text-align: left;
+    max-width: 600px;
+    width: 70%;
+}
+
+.jumpBoard .description>p {
+    margin: 0px;
+}
+
+.jumpBoard .description .des_title {
+    font-size: 21px;
+    color: #28abbf;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.yummy .jumpBoard p {
+    margin: 0px;
+}
+
+.jumpBoard .jumpBtn {
+    background-color: #57BFCF;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 140px;
+    text-align: center;
+    margin: 0px 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 2px #21929b;
+    text-decoration: none;
+}
+
+.jumpBoard .jumpBtn:hover {
+    background-color: #15536A;
+}
+
+@media screen and (max-width: 787px) {
+    .jumpBoard {
+        flex-direction: column;
+        padding: 20px 15px;
+
+    }
+
+    .jumpBoard .description {
+        border: none;
+        padding: 0px 10px;
+        margin: 0px auto;
+    }
+
+    .jumpBoard .description .des_title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        line-height: 30px;
+        border-bottom: 1px solid #57BFCF;
+    }
+
+    .jumpBoard .jumpBtn {
+        padding: 5px 25px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+
+/* =====================
+      跳板區塊結束 
+=====================*/
 
 @media screen and (max-width: 787px) {
     input[type=radio] {
@@ -905,11 +1302,6 @@ background-repeat: no-repeat;
         margin-top: -3px;
     }
 
-    .sTitle .item>span {
-        margin: 20px 10px;
-        font-size: 18px;
-
-    }
 
 }
 
@@ -1065,7 +1457,6 @@ background-repeat: no-repeat;
 
     .yTable_multi tr>td {
         padding: 10px 5px;
-
     }
 
     .yTable_pk {
@@ -1074,15 +1465,47 @@ background-repeat: no-repeat;
         padding: 8px;
     }
 
-    /*問答--開始*/
-    .QA li:first-child, .QA li {
-        padding: 8px auto;
-        font-size: 1.7rem;
-        line-height: 2.8rem;
+    /* 小知識--20230303 */
+    div.Tips h4 {
+        font-size: 19px;
+        letter-spacing: 0.05em;
     }
 
-    .QA li>.none {
-        padding: 3px 12px;
+    div.Tips p {
+        font-size: 16px;
+    }
+
+    /*問答20230302--開始*/
+    .qa li>h4,
+    .QA2 li>p {
+        padding: 8px 10px;
+        margin: 0;
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+
+    .QA2 {
+        margin: auto;
+    }
+
+    .QA2 li .none {
+        padding: 3px 8px;
+
+    }
+
+    /*問答--開始*/
+    .QA {
+        margin: 20px auto;
+    }
+
+    .QA li:first-child,
+    .QA li {
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+
+    .QA li span.none {
+        padding: 0px;
         margin-right: 10px;
     }
 
@@ -1098,31 +1521,7 @@ background-repeat: no-repeat;
 
     }
 
-    /*特殊小標*/
-    .sTitle {
-        padding: 8px;
-    }
 
-    .sTitle .item {
-        padding: 20px 0px 40px;
-        display: flex;
-        background: #fff;
-        justify-content: center;
-
-    }
-
-    .sTitle .item>span {
-        padding: 10px;
-        font-size: 17px;
-
-
-    }
-
-    .sTitle summary {
-        padding: 5px;
-        color: #fff;
-        background: #7381b3;
-    }
 
     .balloon {
         font-size: 18px;
