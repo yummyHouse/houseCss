@@ -1,0 +1,19 @@
+.QA3 {
+  .T_box {
+    color: #385781;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #fff9de;
+    margin: 0;
+    padding: 10px 20px;
+  }
+  .Q_box {
+    text-align: left;
+    line-height: 2rem;
+    padding: 10px 10px 15px 20px;
+    .question {
+      font-weight: 400;
+      color: #333;
+    }
+  }
+}
